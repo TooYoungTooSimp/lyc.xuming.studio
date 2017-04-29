@@ -1,6 +1,6 @@
 ---
 title: Hello world!
-template: tmpl1
+template: basic
 ---
 
 A First Level Header
@@ -28,4 +28,4 @@ When $a \ne 0$, there are two solutions to \\(ax^2 + bx + c = 0\\) and they are 
 > 
 > This is the second paragraph in the blockquote.
 >
-> ## This is an H2 in a blockquote
+> ## This is an H2 in a blockquote   
