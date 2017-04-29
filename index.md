@@ -1,31 +1,11 @@
 ---
-title: Hello world!
+title: 开始页
 template: basic
 ---
 
-A First Level Header
-====================
+# 蒟蒻的新服务器
 
-A Second Level Header
----------------------
+现在暂时什么都没有
 
-Now is the time for all good men to come to the aid of their country. This is just a regular paragraph.
-
-The quick brown fox jumped over the lazy dog's back.
-
-```cpp
-#include <cstdio>
-int main() {
-    printf("123");
-    return 0;
-}
-```
-When $a \ne 0$, there are two solutions to \\(ax^2 + bx + c = 0\\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-
-### Header 3
-
-> This is a blockquote.
-> 
-> This is the second paragraph in the blockquote.
->
-> ## This is an H2 in a blockquote   
+> ### 一句小诗：
+> 苟利国家生死以，岂因祸福避趋之
