@@ -1,4 +1,4 @@
-﻿---
+---
 title: 开始页
 template: basic
 ---
