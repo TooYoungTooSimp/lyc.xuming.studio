@@ -20,9 +20,6 @@ int main() {
 ```
 ### Header 3
 
-When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-
 > This is a blockquote.
 > 
 > This is the second paragraph in the blockquote.
