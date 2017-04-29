@@ -13,8 +13,8 @@ Now is the time for all good men to come to the aid of their country. This is ju
 The quick brown fox jumped over the lazy
 dog's back.
 
-```c
-#include <stdio.h>
+```cpp
+#include <cstdio>
 int main() {
     printf("123");
     return 0;
