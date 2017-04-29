@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>{{.Doc.title}}</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://assets-cdn.github.com/assets/github-d3d79f67a533758106eb43cd943edc6cc25eb8b60a18efdb65d7ccb1646af576.css">
-	</head>
-	<body class="markdown-body">
-		<div class="container">
-			{{.Doc.body}}
-		</div>
-	</body>
+<head>
+    <title>{{.Doc.title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://assets-cdn.github.com/assets/github-d3d79f67a533758106eb43cd943edc6cc25eb8b60a18efdb65d7ccb1646af576.css">
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script src="https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML"></script>
+</head>
+<body class="markdown-body">
+    <div class="container">
+        {{.Doc.body}}
+    </div>
+</body>
 </html>
