@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{.Doc.title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {{.Include "/template/stdinc.html"}}
+</head>
+<body>
+    <div class="markdown-body container">
+        {{.Doc.body}}
+    </div>
+    <script>
+        $("#__comment").html('<div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>');
+        var cloudTieConfig = {
+            url: document.location.href,
+            sourceId: "",
+            productKey: "3319240364044c759b505825b6839703",
+            target: "cloud-tie-wrapper"
+        };
+    </script>
+    <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+</body>
+</html>

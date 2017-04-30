@@ -10,16 +10,17 @@
         {{.Doc.body}}
     </div>
     <script>
-    var disqus_config = function () {
-        this.page.url = 'https://lyc.xuming.studio' + '{{.URI}}';
-        this.page.identifier = '{{.URI}}';
-    };
-    (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://lyc-xuming-studio.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
+        $("#__comment").html('<div id="disqus_thread"></div>');
+        var disqus_config = function () {
+            this.page.url = 'https://lyc.xuming.studio' + '{{.URI}}';
+            this.page.identifier = '{{.URI}}';
+        };
+        (function () {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://lyc-xuming-studio.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
     </script>
 </body>
 </html>
