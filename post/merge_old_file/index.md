@@ -112,7 +112,7 @@ find | grep .md | while read line; do
 done
 ```
 ## 感谢[Caddy](https://caddyserver.com/), the web server
-自动SSL用起来真方便，自动Markdown生成真方便，Template真方便
+自动HTTPS用起来真方便，自动Markdown生成真方便，Template真方便
 
 ## 语录
 > <span id="poem"></span>
