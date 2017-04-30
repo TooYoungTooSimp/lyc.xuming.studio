@@ -1,6 +1,6 @@
 ---
 title: disqus_test
-template: disqus_test
+template: post_with_disqus
 ---
 
 # disqus_test
