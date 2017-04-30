@@ -12,6 +12,6 @@ template: basic
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script>
     $(function() {
-        $.ajax('/api/poem?rnd='+Math.random()).done(function(data){$('#poem').text(data)});
+        $.ajax('/api/poem?rnd='+Date.now()+Math.random()).done(function(data){$('#poem').text(data)});
     });
 </script>
