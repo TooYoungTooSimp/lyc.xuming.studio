@@ -5,7 +5,7 @@ template: basic
 
 # 蒟蒻的新服务器
 
-## 原来水过的题目合集
+## 原来水过的题目合集 [截止至2017/4/30，不完全统计]
 
 ### [CODEFORCES ROUND #364 (DIV. 2) A](/post/codeforces_round_#364_(div._2)_a)
 > CODEFORCES ROUND #364 (DIV. 2) A
