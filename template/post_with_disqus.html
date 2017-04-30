@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{.Doc.title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {{.Include "/template/stdinc.html"}}
+</head>
+<body>
+    <div class="markdown-body container">
+        {{.Doc.body}}
+    </div>
+    <script>
+    var disqus_config = function () {
+        this.page.url = {{.URI}};
+        this.page.identifier = {{.URI}};
+    };
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://lyc-xuming-studio.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    </script>
+</body>
+</html>
