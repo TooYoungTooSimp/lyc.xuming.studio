@@ -571,7 +571,7 @@ template: basic
 ### [TYVJ CONTEST816 SORT SORT](/post/tyvj_contest816_sort_sort)
 > TYVJ CONTEST816 SORT SORT
 
-
+## 语录
 > <span id="poem"></span>
 
 <script>$(function(){$.ajax('/api/poem?rnd='+Date.now()+Math.random()).done(function(data){$('#poem').text(data);});});</script>
