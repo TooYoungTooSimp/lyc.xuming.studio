@@ -7,70 +7,70 @@ template: basic
 
 ## 原来水过的题目合集 [截止至2017/4/30，不完全统计]
 
-### [CODEFORCES ROUND #364 (DIV. 2) A](/post/codeforces_round_#364_(div._2)_a)
+### [CODEFORCES ROUND #364 (DIV. 2) A](/post/codeforces_round_364_(div._2)_a)
 > CODEFORCES ROUND #364 (DIV. 2) A
 
-### [CODEFORCES ROUND #364 (DIV. 2) B](/post/codeforces_round_#364_(div._2)_b)
+### [CODEFORCES ROUND #364 (DIV. 2) B](/post/codeforces_round_364_(div._2)_b)
 > CODEFORCES ROUND #364 (DIV. 2) B
 
-### [CODEFORCES ROUND #364 (DIV. 2) C](/post/codeforces_round_#364_(div._2)_c)
+### [CODEFORCES ROUND #364 (DIV. 2) C](/post/codeforces_round_364_(div._2)_c)
 > CODEFORCES ROUND #364 (DIV. 2) C
 
-### [CODEFORCES ROUND #365 (DIV. 2) A](/post/codeforces_round_#365_(div._2)_a)
+### [CODEFORCES ROUND #365 (DIV. 2) A](/post/codeforces_round_365_(div._2)_a)
 > CODEFORCES ROUND #365 (DIV. 2) A
 
-### [CODEFORCES ROUND #365 (DIV. 2) B](/post/codeforces_round_#365_(div._2)_b)
+### [CODEFORCES ROUND #365 (DIV. 2) B](/post/codeforces_round_365_(div._2)_b)
 > CODEFORCES ROUND #365 (DIV. 2) B
 
-### [CODEFORCES ROUND #365 (DIV. 2) C](/post/codeforces_round_#365_(div._2)_c)
+### [CODEFORCES ROUND #365 (DIV. 2) C](/post/codeforces_round_365_(div._2)_c)
 > CODEFORCES ROUND #365 (DIV. 2) C
 
-### [CODEFORCES ROUND #366 (DIV. 2) A](/post/codeforces_round_#366_(div._2)_a)
+### [CODEFORCES ROUND #366 (DIV. 2) A](/post/codeforces_round_366_(div._2)_a)
 > CODEFORCES ROUND #366 (DIV. 2) A
 
-### [CODEFORCES ROUND #366 (DIV. 2) B](/post/codeforces_round_#366_(div._2)_b)
+### [CODEFORCES ROUND #366 (DIV. 2) B](/post/codeforces_round_366_(div._2)_b)
 > CODEFORCES ROUND #366 (DIV. 2) B
 
-### [CODEFORCES ROUND #366 (DIV. 2) C](/post/codeforces_round_#366_(div._2)_c)
+### [CODEFORCES ROUND #366 (DIV. 2) C](/post/codeforces_round_366_(div._2)_c)
 > CODEFORCES ROUND #366 (DIV. 2) C
 
-### [CODEFORCES ROUND #367 (DIV. 2) A](/post/codeforces_round_#367_(div._2)_a)
+### [CODEFORCES ROUND #367 (DIV. 2) A](/post/codeforces_round_367_(div._2)_a)
 > CODEFORCES ROUND #367 (DIV. 2) A
 
-### [CODEFORCES ROUND #367 (DIV. 2) B](/post/codeforces_round_#367_(div._2)_b)
+### [CODEFORCES ROUND #367 (DIV. 2) B](/post/codeforces_round_367_(div._2)_b)
 > CODEFORCES ROUND #367 (DIV. 2) B
 
-### [CODEFORCES ROUND #367 (DIV. 2) D](/post/codeforces_round_#367_(div._2)_d)
+### [CODEFORCES ROUND #367 (DIV. 2) D](/post/codeforces_round_367_(div._2)_d)
 > CODEFORCES ROUND #367 (DIV. 2) D
 
-### [CODEFORCES ROUND #368 (DIV. 2) A](/post/codeforces_round_#368_(div._2)_a)
+### [CODEFORCES ROUND #368 (DIV. 2) A](/post/codeforces_round_368_(div._2)_a)
 > CODEFORCES ROUND #368 (DIV. 2) A
 
-### [CODEFORCES ROUND #368 (DIV. 2) B](/post/codeforces_round_#368_(div._2)_b)
+### [CODEFORCES ROUND #368 (DIV. 2) B](/post/codeforces_round_368_(div._2)_b)
 > CODEFORCES ROUND #368 (DIV. 2) B
 
-### [CODEFORCES ROUND #368 (DIV. 2) C](/post/codeforces_round_#368_(div._2)_c)
+### [CODEFORCES ROUND #368 (DIV. 2) C](/post/codeforces_round_368_(div._2)_c)
 > CODEFORCES ROUND #368 (DIV. 2) C
 
-### [CODEFORCES ROUND #369 (DIV. 2) A](/post/codeforces_round_#369_(div._2)_a)
+### [CODEFORCES ROUND #369 (DIV. 2) A](/post/codeforces_round_369_(div._2)_a)
 > CODEFORCES ROUND #369 (DIV. 2) A
 
-### [CODEFORCES ROUND #369 (DIV. 2) B](/post/codeforces_round_#369_(div._2)_b)
+### [CODEFORCES ROUND #369 (DIV. 2) B](/post/codeforces_round_369_(div._2)_b)
 > CODEFORCES ROUND #369 (DIV. 2) B
 
-### [CODEFORCES ROUND #369 (DIV. 2) E](/post/codeforces_round_#369_(div._2)_e)
+### [CODEFORCES ROUND #369 (DIV. 2) E](/post/codeforces_round_369_(div._2)_e)
 > CODEFORCES ROUND #369 (DIV. 2) E
 
-### [CODEFORCES ROUND #374 (DIV. 2) A](/post/codeforces_round_#374_(div._2)_a)
+### [CODEFORCES ROUND #374 (DIV. 2) A](/post/codeforces_round_374_(div._2)_a)
 > CODEFORCES ROUND #374 (DIV. 2) A
 
-### [CODEFORCES ROUND #374 (DIV. 2) B](/post/codeforces_round_#374_(div._2)_b)
+### [CODEFORCES ROUND #374 (DIV. 2) B](/post/codeforces_round_374_(div._2)_b)
 > CODEFORCES ROUND #374 (DIV. 2) B
 
-### [CODEFORCES ROUND #374 (DIV. 2) C](/post/codeforces_round_#374_(div._2)_c)
+### [CODEFORCES ROUND #374 (DIV. 2) C](/post/codeforces_round_374_(div._2)_c)
 > CODEFORCES ROUND #374 (DIV. 2) C
 
-### [CODEFORCES ROUND #374 (DIV. 2) E](/post/codeforces_round_#374_(div._2)_e)
+### [CODEFORCES ROUND #374 (DIV. 2) E](/post/codeforces_round_374_(div._2)_e)
 > CODEFORCES ROUND #374 (DIV. 2) E
 
 ### [HDU 1007](/post/hdu_1007)
