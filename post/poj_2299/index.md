@@ -5,7 +5,7 @@ pageId: poj_2299
 ---
 
 # POJ 2299
-
+<span id="poem"></span><script>$(function(){$.ajax('/api/poem?rnd='+Date.now()+Math.random()).done(function(data){$('#poem').text(data);});});</script>
 ## 题目大意
 暂无
 

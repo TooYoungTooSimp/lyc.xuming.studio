@@ -5,7 +5,7 @@ pageId: tyvj_contest799_tour_tour
 ---
 
 # TYVJ CONTEST799 TOUR TOUR
-
+<span id="poem"></span><script>$(function(){$.ajax('/api/poem?rnd='+Date.now()+Math.random()).done(function(data){$('#poem').text(data);});});</script>
 ## 题目大意
 暂无
 

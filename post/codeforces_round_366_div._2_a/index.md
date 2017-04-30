@@ -5,7 +5,7 @@ pageId: codeforces_round_#366_(div._2)_a
 ---
 
 # CODEFORCES ROUND #366 (DIV. 2) A
-
+<span id="poem"></span><script>$(function(){$.ajax('/api/poem?rnd='+Date.now()+Math.random()).done(function(data){$('#poem').text(data);});});</script>
 ## 题目大意
 暂无
 

@@ -5,7 +5,7 @@ pageId: lydsy_1816
 ---
 
 # LYDSY 1816
-
+<span id="poem"></span><script>$(function(){$.ajax('/api/poem?rnd='+Date.now()+Math.random()).done(function(data){$('#poem').text(data);});});</script>
 ## 棰樼洰澶ф剰
 鏆傛棤
 
@@ -15,7 +15,7 @@ pageId: lydsy_1816
 ## RTFC
 
 ```cpp
-//抄的题解，谁告诉我这个check到底是什么意思
+//锟斤拷锟斤拷锟斤拷猓拷锟斤拷锟斤拷锟斤拷锟斤拷check锟斤拷锟斤拷锟斤拷什么锟斤拷思
 #include <cstdio>
 int n, m, a[51];
 bool check(int x)

@@ -5,7 +5,7 @@ pageId: hdu_1007
 ---
 
 # HDU 1007
-
+<span id="poem"></span><script>$(function(){$.ajax('/api/poem?rnd='+Date.now()+Math.random()).done(function(data){$('#poem').text(data);});});</script>
 ## 题目大意
 暂无
 

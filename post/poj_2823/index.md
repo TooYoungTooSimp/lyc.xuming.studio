@@ -5,7 +5,7 @@ pageId: poj_2823
 ---
 
 # POJ 2823
-
+<span id="poem"></span><script>$(function(){$.ajax('/api/poem?rnd='+Date.now()+Math.random()).done(function(data){$('#poem').text(data);});});</script>
 ## é¢˜ç›®å¤§æ„
 æš‚æ— 
 
@@ -15,7 +15,7 @@ pageId: poj_2823
 ## RTFC
 
 ```cpp
-//À±¼¦POJ£¬ÌìÌìTLE
+//ï¿½ï¿½ï¿½ï¿½POJï¿½ï¿½ï¿½ï¿½ï¿½ï¿½TLE
 #include <cstdio>
 int n, k, a[1000001], que[1000001][2], head, tail;
 int main()
