@@ -1,0 +1,25 @@
+---
+template: post_with_netease
+title: LYDSY 1432
+pageId: lydsy_1432
+---
+
+# LYDSY 1432
+
+## 题目大意
+暂无
+
+## 题目解法
+暂无
+
+## RTFC
+
+```cpp
+#include <cstdio>
+int main()
+{
+    int n, k;
+    scanf("%d%d", &n, &k);
+    printf("%d", (n == 1) ? 1 : (k < n - k + 1 ? k : n - k + 1) << 1);
+}
+```
