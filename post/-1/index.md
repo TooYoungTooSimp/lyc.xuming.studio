@@ -1,6 +1,7 @@
 ---
 title: disqus_test
 template: post_with_disqus
+pageId: disqus_test
 ---
 
 # disqus_test

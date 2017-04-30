@@ -12,15 +12,9 @@
     <script>
         $("#__comment").html('<div id="disqus_thread"></div>');
         var disqus_config = function () {
-            this.page.url = 'https://lyc.xuming.studio' + '{{.URI}}';
-            this.page.identifier = '{{.URI}}';
+            this.page.identifier = '{{.Doc.pageId}}';
         };
-        (function () {
-            var d = document, s = d.createElement('script');
-            s.src = 'https://lyc-xuming-studio.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
     </script>
+    <script src="https://lyc-xuming-studio.disqus.com/embed.js" data-timestamp="javascript:+new Date()"></script>
 </body>
 </html>
