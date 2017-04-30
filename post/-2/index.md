@@ -1,6 +1,7 @@
 ---
 title: netease_test
 template: post_with_netease
+pageId: netease_test
 ---
 
 # 网易云跟贴测试

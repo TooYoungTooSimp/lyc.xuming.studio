@@ -12,8 +12,8 @@
     <script>
         $("#__comment").html('<div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>');
         var cloudTieConfig = {
-            url: document.location.href,
-            sourceId: "",
+            url: "",
+            sourceId: "{{.Doc.pageId}}",
             productKey: "3319240364044c759b505825b6839703",
             target: "cloud-tie-wrapper"
         };
