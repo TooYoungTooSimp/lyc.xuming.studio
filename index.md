@@ -1,5 +1,5 @@
 ---
-title: 开始页
+title: 个人的奋斗与历史的行程
 template: basic
 ---
 
