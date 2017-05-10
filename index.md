@@ -583,7 +583,6 @@ template: basic
 > <span id="poem"></span>
 
 <hr>
-
-<p class="text-center">[巨佬们](/friends)</p>
+[巨佬们](/friends)
 
 <script>$(function(){$.ajax('/api/poem?rnd='+Date.now()+Math.random()).done(function(data){$('#poem').text(data);});});</script>
