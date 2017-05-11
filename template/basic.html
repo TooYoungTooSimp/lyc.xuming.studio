@@ -7,9 +7,9 @@
 </head>
 <body>
     <div class="markdown-body container">
-        {{.Doc.body}}
+        <article>{{.Doc.body}}</article>
+        {{.Include "/template/footer.html"}}
     </div>
     {{.Include "/template/analytics.html"}}
-    {{.Include "/template/footer.html"}}
 </body>
 </html>
