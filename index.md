@@ -4,6 +4,7 @@ template: basic
 ---
 
 # 蒟蒻的新服务器
+> <span id="poem"></span>
 
 ## [2017/5/1及以后]
 
@@ -579,7 +580,6 @@ template: basic
 ### [TYVJ CONTEST816 SORT SORT](/post/tyvj_contest816_sort_sort)
 > TYVJ CONTEST816 SORT SORT
 
-## 语录
-> <span id="poem"></span>
+[巨佬们](/friends)
 
 <script>$(function(){$.ajax('/api/poem?rnd='+Date.now()+Math.random()).done(function(data){$('#poem').text(data);});});</script>
