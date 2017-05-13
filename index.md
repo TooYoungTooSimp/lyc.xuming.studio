@@ -3,7 +3,7 @@ title: 个人的奋斗与历史的行程
 template: basic
 ---
 
-# 蒟蒻的新服务器
+# 历史的行程
 > <span id="poem"></span>
 
 ## [2017/5/1及以后]
