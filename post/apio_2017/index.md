@@ -18,5 +18,6 @@ $23+11+12=46$，刚好够去年的分数线，能不能拿Cu就看命了。
 
 <hr />
 > <span id='poem'></span>
+
 <div id="__comment"></div>
 <script>$(function(){$.ajax('/api/poem?rnd='+Date.now()+Math.random()).done(function(data){$('#poem').text(data);});});</script>
