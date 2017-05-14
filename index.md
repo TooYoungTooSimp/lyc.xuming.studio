@@ -4,7 +4,7 @@ template: basic
 ---
 
 # 历史的行程
-> <span id="poem"></span>
+> <span id="poem">&nbsp;</span>
 
 ## [2017/5/1及以后]
 
