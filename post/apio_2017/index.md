@@ -21,7 +21,7 @@ $23+11+12=46$，刚好够去年的[分数线](http://history.ccf.org.cn/resource
 省里两个金牌，其他全是铜牌或狗牌，我46分刚好省里第五，要是拿这个当省选的话我是能进A队的，然而最终并没有进。
 
 ## 失败人士的浅色床单上的狗牌
-![狗牌照片](IMG_20170515_002931.jpg)
+![狗牌照片](https://ws1.sinaimg.cn/large/005CIC0hgy1ffvj1q0c5dj33342bctjg.jpg)
 
 <hr />
 > <span id='poem'></span>

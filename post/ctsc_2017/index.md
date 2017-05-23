@@ -73,7 +73,7 @@ pageId: ctsc_2017
 看运气吧，天要给几分是几分了，是时候认识到自己的失败了。
 
 ## 失败人士的浅色床单上的狗牌
-![狗牌照片](IMG_20170515_002043.jpg)
+![狗牌照片](https://ws1.sinaimg.cn/large/005CIC0hgy1ffvj1f82wwj33342bc7d2.jpg)
 
 <hr>
 
