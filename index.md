@@ -590,6 +590,7 @@ template: basic
 > TYVJ CONTEST816 SORT SORT
 
 <hr />
+
 [巨佬们](/friends)
 
 <script>$(function(){$.ajax('/api/poem/12').done(function(data){$('#poem').text(data);});});</script>
