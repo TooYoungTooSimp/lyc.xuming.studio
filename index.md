@@ -592,4 +592,4 @@ template: basic
 <hr />
 [巨佬们](/friends)
 
-<script>$(function(){$.ajax('/api/poem?rnd='+Date.now()+Math.random()).done(function(data){$('#poem').text(data);});});</script>
+<script>$(function(){$.ajax('/api/poem/12').done(function(data){$('#poem').text(data);});});</script>
