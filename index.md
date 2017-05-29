@@ -25,7 +25,7 @@ template: basic
 
 ## 原来在各个OJ上水过的题目合集 [截止至2017/4/30，不完全统计] <span onclick='$("#__archive_posts").toggle()'>点击展开/收起</span>
 
-<div id='__archive_posts' style='display: none' >
+<div id='__archive_posts' style='display: none'>  
 
 ### [CODEFORCES ROUND #364 (DIV. 2) A](/post/codeforces_round_364_div._2_a)
 > CODEFORCES ROUND #364 (DIV. 2) A
