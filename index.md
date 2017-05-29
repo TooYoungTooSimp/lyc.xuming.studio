@@ -23,9 +23,7 @@ template: basic
 ### [将以前水过的题搬到新服务器上](/post/merge_old_file)
 > 我买了一个服务器，不知道干什么，就瞎搞了一通。（然后欣喜的发现我因为全省第九而退役，这个东西没卵用了
 
-## 原来在各个OJ上水过的题目合集 [截止至2017/4/30，不完全统计] <span onclick='$("#__archive_posts").toggle()'>点击展开/收起</span>
-
-<div id='__archive_posts' style='display: none'>  
+## 原来在各个OJ上水过的题目合集 [截止至2017/4/30，不完全统计]
 
 ### [CODEFORCES ROUND #364 (DIV. 2) A](/post/codeforces_round_364_div._2_a)
 > CODEFORCES ROUND #364 (DIV. 2) A
@@ -590,8 +588,6 @@ template: basic
 
 ### [TYVJ CONTEST816 SORT SORT](/post/tyvj_contest816_sort_sort)
 > TYVJ CONTEST816 SORT SORT
-
-</div>
 
 <hr />
 [巨佬们](/friends)
