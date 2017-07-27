@@ -1,5 +1,5 @@
 ---
-template: post_with_netease
+template: post_with_disqus
 title: APIO2017旅游记
 pageId: apio_2017
 ---

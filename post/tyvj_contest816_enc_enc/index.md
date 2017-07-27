@@ -1,5 +1,5 @@
 ---
-template: post_with_netease
+template: post_with_disqus
 title: TYVJ CONTEST816 ENC ENC
 pageId: tyvj_contest816_enc_enc
 ---

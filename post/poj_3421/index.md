@@ -1,5 +1,5 @@
 ---
-template: post_with_netease
+template: post_with_disqus
 title: POJ 3421
 pageId: poj_3421
 ---

@@ -1,5 +1,5 @@
 ---
-template: post_with_netease
+template: post_with_disqus
 title: CTSC2017旅游记
 pageId: ctsc_2017
 ---

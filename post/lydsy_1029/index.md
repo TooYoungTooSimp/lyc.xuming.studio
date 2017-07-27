@@ -1,5 +1,5 @@
 ---
-template: post_with_netease
+template: post_with_disqus
 title: LYDSY 1029
 pageId: lydsy_1029
 ---

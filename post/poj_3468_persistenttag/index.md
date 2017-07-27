@@ -1,5 +1,5 @@
 ---
-template: post_with_netease
+template: post_with_disqus
 title: POJ 3468_PERSISTENTTAG
 pageId: poj_3468_persistenttag
 ---

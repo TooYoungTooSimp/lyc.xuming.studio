@@ -1,5 +1,5 @@
 ---
-template: post_with_netease
+template: post_with_disqus
 title: SPOJ QTREE_HLD
 pageId: spoj_qtree_hld
 ---

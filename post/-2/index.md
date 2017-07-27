@@ -1,7 +1,7 @@
 ---
-title: netease_test
-template: post_with_netease
-pageId: netease_test
+title: disqus_test
+template: post_with_disqus
+pageId: disqus_test
 ---
 
 # 网易云跟贴测试

@@ -1,5 +1,5 @@
 ---
-template: post_with_netease
+template: post_with_disqus
 title: HDU 1402
 pageId: hdu_1402
 ---

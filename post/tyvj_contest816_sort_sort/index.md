@@ -1,5 +1,5 @@
 ---
-template: post_with_netease
+template: post_with_disqus
 title: TYVJ CONTEST816 SORT SORT
 pageId: tyvj_contest816_sort_sort
 ---

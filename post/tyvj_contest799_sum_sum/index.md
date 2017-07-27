@@ -1,5 +1,5 @@
 ---
-template: post_with_netease
+template: post_with_disqus
 title: TYVJ CONTEST799 SUM SUM
 pageId: tyvj_contest799_sum_sum
 ---

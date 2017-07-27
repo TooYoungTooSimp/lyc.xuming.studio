@@ -1,5 +1,5 @@
 ---
-template: post_with_netease
+template: post_with_disqus
 title: CODEFORCES ROUND #368 (DIV. 2) B
 pageId: codeforces_round_#368_(div._2)_b
 ---

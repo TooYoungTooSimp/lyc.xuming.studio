@@ -1,5 +1,5 @@
 ---
-template: post_with_netease
+template: post_with_disqus
 title: LYDSY 3224_SPLAY
 pageId: lydsy_3224_splay
 ---
