@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{.Doc.title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {{.Include "/template/stdinc.html"}}
+</head>
+<body>
+    <div class="markdown-body container">
+        {{.Doc.body}}
+    </div>
+    <script>
+        $("#__comment").html('<div id="isso-thread" style="text-align: center;"></div>');
+    </script>
+    <script data-isso="/isso" data-isso-lang="zh" src="/isso/js/embed.min.js"></script>
+    {{.Include "/template/analytics.html"}}
+</body>
+</html>
