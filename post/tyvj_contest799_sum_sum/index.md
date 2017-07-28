@@ -1,5 +1,5 @@
 ---
-template: post_with_disqus
+template: post_with_isso
 title: TYVJ CONTEST799 SUM SUM
 pageId: tyvj_contest799_sum_sum
 ---

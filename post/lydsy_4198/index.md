@@ -1,5 +1,5 @@
 ---
-template: post_with_disqus
+template: post_with_isso
 title: LYDSY 4198
 pageId: lydsy_4198
 ---

@@ -1,5 +1,5 @@
 ---
-template: post_with_disqus
+template: post_with_isso
 title: POJ 3177
 pageId: poj_3177
 ---

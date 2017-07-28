@@ -1,5 +1,5 @@
 ---
-template: post_with_disqus
+template: post_with_isso
 title: 都他妈的结束了
 pageId: end_of_OI
 ---

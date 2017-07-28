@@ -1,5 +1,5 @@
 ---
-template: post_with_disqus
+template: post_with_isso
 title: 将以前水过的题搬到新服务器上
 pageId: merge_old_file
 ---
@@ -55,7 +55,7 @@ int main(int argc, char **argv)
     outFile[len++] = 'd';
     freopen(outFile, "w", stdout);
     puts("---");
-    puts("template: post_with_disqus");
+    puts("template: post_with_isso");
     printf("title: %s\n", fileName);
     printf("pageId: %s\n", pageId);
     puts("---");

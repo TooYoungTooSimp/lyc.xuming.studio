@@ -1,5 +1,5 @@
 ---
-template: post_with_disqus
+template: post_with_isso
 title: TYVJ CONTEST816 ENC ENC
 pageId: tyvj_contest816_enc_enc
 ---

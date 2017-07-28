@@ -1,5 +1,5 @@
 ---
-template: post_with_disqus
+template: post_with_isso
 title: CODEFORCES ROUND #366 (DIV. 2) A
 pageId: codeforces_round_#366_(div._2)_a
 ---

@@ -1,5 +1,5 @@
 ---
-template: post_with_disqus
+template: post_with_isso
 title: HDU 2222
 pageId: hdu_2222
 ---

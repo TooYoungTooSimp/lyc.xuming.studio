@@ -1,5 +1,5 @@
 ---
-template: post_with_disqus
+template: post_with_isso
 title: 文化课的正式开始
 pageId: 20170529
 ---
