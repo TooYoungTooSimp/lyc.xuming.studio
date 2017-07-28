@@ -10,7 +10,7 @@
         {{.Doc.body}}
     </div>
     <script>
-        $("#__comment").html('<div id="disqus_thread" style="text-align: center;">如果不能评论，试试科学上网</div>');
+        $("#__comment").html('<hr /><div id="disqus_thread" style="text-align: center;">如果不能评论，试试科学上网</div>');
         var disqus_config = function () {
             this.page.identifier = '{{.Doc.pageId}}';
         };
