@@ -4,16 +4,22 @@
     <title>{{.Doc.title}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {{.Include "/template/stdinc.html"}}
+    <style>
+        .lr-border {
+            border-left: 1px groove grey;
+            border-right: 1px groove grey;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-9">
+            <div class="col-9 lr-border">
                 <article class="markdown-body">
                     {{.Doc.body}}
                 </article>
             </div>
-            <div class="col-3">
+            <div class="col-3 lr-border">
                 <div class="text-center">
                     <a href="/">回到历史的进程</a>
                 </div>
