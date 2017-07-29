@@ -6,8 +6,20 @@
     {{.Include "/template/stdinc.html"}}
 </head>
 <body>
-    <div class="markdown-body container">
-        {{.Doc.body}}
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+                <article class="markdown-body">
+                    {{.Doc.body}}
+                </article>
+            </div>
+            <div class="col-3">
+                <div class="text-center">
+                    <a href="/">回到历史的进程</a>
+                </div>
+                Currently under inactive development
+            </div>
+        </div>
     </div>
     <script>
         $("#__comment").html('<hr /><div id="isso-thread"></div>');
