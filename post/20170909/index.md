@@ -8,7 +8,8 @@ pageId: 20170909
 > <span id='poem'>&nbsp;</span>
 
 经过十几分钟的研究，我成功的建立了一个[CI](https://ci.xuming.studio)。  
-如果哪个我熟识的同学想借用一下的话可以联系我，我给你加个账号。
+如果哪个我熟识的同学想借用一下的话可以联系我，我给你加个账号。  
+可以使用的编译器/解释器有`gcc, g++, dotnet, python 2/3, java`。
 
 <div id='__comment'></div>
 <script>$(function(){$.ajax('/api/poem?rnd='+Date.now()+Math.random()).done(function(data){$('#poem').text(data);});});</script>
