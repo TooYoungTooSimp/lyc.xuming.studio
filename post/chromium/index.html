@@ -45,8 +45,8 @@
             $.get("/api/ChromiumUrls", function (urls) {
                 var setUrl = function (platform) {
                     var link = document.createElement("a");
-                    link.innerText = urls[platform];
-                    link.setAttribute("a", urls[platform]);
+                    link.innerText = urls[platform].substring(0, urls[platform].length - 10);
+                    link.setAttribute("href", urls[platform]);
                     $("#" + platform).html(link);
                 };
                 setUrl("Win");
