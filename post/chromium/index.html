@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chromium Download Urls</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Chromium Download Urls</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Platform</th>
+                    <th scope="col">Download Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Windows x64</td>
+                    <td id="Win_x64"></td>
+                </tr>
+                <tr>
+                    <td>Windows x86</td>
+                    <td id="Win"></td>
+                </tr>
+                <tr>
+                    <td>Linux x64</td>
+                    <td id="Linux_x64"></td>
+                </tr>
+                <tr>
+                    <td>Linux x86</td>
+                    <td id="Linux"></td>
+                </tr>
+                <tr>
+                    <td>macOS</td>
+                    <td id="Mac"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        $(function () {
+            $.get("/api/ChromiumUrls", function (urls) {
+                var setUrl = function (platform) {
+                    var link = document.createElement("a");
+                    link.innerText = urls[platform];
+                    link.setAttribute("a", urls[platform]);
+                    $("#" + platform).html(link);
+                };
+                setUrl("Win");
+                setUrl("Win_x64");
+                setUrl("Linux");
+                setUrl("Linux_x64");
+                setUrl("Mac");
+            });
+        });
+    </script>
+</body>
+</html>
