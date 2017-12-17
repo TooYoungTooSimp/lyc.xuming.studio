@@ -8,6 +8,9 @@ template: basic
 
 ## [2017/5/1及以后]
 
+### [Chromium下载地址](/post/chromium)
+> 全平台均有，需要科学上网
+
 ### [一个新项目](/post/20171118)
 > github-webhook
 
