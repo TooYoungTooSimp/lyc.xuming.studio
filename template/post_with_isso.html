@@ -14,7 +14,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-9 lr-border">
+            <div class="col lr-border">
                 <article class="markdown-body">
                     {{.Doc.body}}
                 </article>
@@ -27,11 +27,11 @@
                 <img class="img-fluid" src="https://ws1.sinaimg.cn/large/005CIC0hgy1fjdgk7pygtj30jv1gjwpy.jpg"/>
             </div>
         </div>
+        {{.Include "/template/footer.html"}}
     </div>
     <script>
         $("#__comment").html('<hr /><div id="isso-thread"></div>');
     </script>
     <script data-isso="/isso" data-isso-lang="zh" src="/isso/js/embed.min.js"></script>
-    {{.Include "/template/analytics.html"}}
 </body>
 </html>

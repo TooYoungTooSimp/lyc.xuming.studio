@@ -6,9 +6,9 @@
     {{.Include "/template/stdinc.html"}}
 </head>
 <body>
-    <div class="markdown-body container">
-        <article>{{.Doc.body}}</article>
+    <div class="container">
+        <article class="markdown-body">{{.Doc.body}}</article>
+        {{.Include "/template/footer.html"}}
     </div>
-    {{.Include "/template/analytics.html"}}
 </body>
 </html>
