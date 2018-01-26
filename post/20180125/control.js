@@ -2,6 +2,20 @@ $(function () {
     $.get("/api/poem?rnd=" + Date.now() + Math.random(), function (data) {
         $('#poem').text(data);
     });
+    (function () {
+        var targetDate = new Date("2018-06-07");
+        var cFactor = 24 * 60 * 60 * 1000;
+        $("#textLive h3").each(function (idx) {
+            var element = this;
+            var txtDate = element.innerText;
+            var curDate = new Date([txtDate.slice(0, 4), txtDate.slice(4, 6), txtDate.slice(6, 8)].join("-"));
+            element.innerText = [
+                curDate.getFullYear(), " 年 ", curDate.getMonth() + 1, " 月 ", curDate.getDate(), " 日 ",
+                "星期", ["日", "一", "二", "三", "四", "五", "六"][curDate.getDay()], "， ",
+                "离高考还有 ", (targetDate - curDate) / cFactor, " 天"
+            ].join("");
+        });
+    }());
     $.getJSON("scores.json?rnd=" + Date.now() + Math.random(), function (rawScore) {
         testNames = [], ranks = [], scores = [];
         [0, 1].forEach(function (i) {
@@ -11,12 +25,12 @@ $(function () {
             scores[i] = [];
         });
         rawScore.forEach(function (singleTest) {
-            testNames.push(singleTest.name);
+            testNames.push(singleTest[0]);
             [0, 1].forEach(function (i) {
-                ranks[i].push(singleTest.rank[i]);
+                ranks[i].push(singleTest[1][i]);
             });
             [0, 1, 2, 3, 4, 5].forEach(function (i) {
-                scores[i].push(singleTest.score[i])
+                scores[i].push(singleTest[2][i])
             });
         });
         var scoreChart = new Chart("scoreChart", {

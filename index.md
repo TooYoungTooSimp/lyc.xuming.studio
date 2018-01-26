@@ -8,7 +8,7 @@ template: basic
 
 ## [2017/5/1及以后]
 
-### [(施工中)高考直播](/post/20180125)
+### [【文字直播】高考<span class="fa fa-square-o"></span><span class="fa fa-square-o"></span>一百天（30天试运行）](/post/20180125)
 > 试运行30天
 
 ### [Chromium下载地址](/post/chromium)
