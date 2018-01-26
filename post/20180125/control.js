@@ -93,7 +93,7 @@ $(function () {
                     },
                     {
                         fill: false,
-                        label: "班级排名",
+                        label: "班次",
                         data: ranks[0],
                         yAxisID: "yRankC",
                         borderColor: "black",
@@ -101,7 +101,7 @@ $(function () {
                     },
                     {
                         fill: false,
-                        label: "年级排名",
+                        label: "级次",
                         data: ranks[1],
                         yAxisID: "yRankG",
                         borderColor: "DimGray",
