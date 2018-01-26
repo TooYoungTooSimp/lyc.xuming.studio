@@ -73,7 +73,7 @@ $(function () {
                         fill: false,
                         label: "班级排名",
                         data: ranks[0],
-                        yAxisID: "yRank",
+                        yAxisID: "yRankC",
                         borderColor: "black",
                         backgroundColor: "black"
                     },
@@ -81,7 +81,7 @@ $(function () {
                         fill: false,
                         label: "年级排名",
                         data: ranks[1],
-                        yAxisID: "yRank",
+                        yAxisID: "yRankG",
                         borderColor: "DimGray",
                         backgroundColor: "DimGray"
                     }
@@ -127,7 +127,7 @@ $(function () {
                             }
                         },
                         {
-                            id: "yNormalized",
+                            id: "yCorrectness",
                             type: "linear",
                             position: "left",
                             ticks: {
@@ -141,12 +141,22 @@ $(function () {
                             }
                         },
                         {
-                            id: "yRank",
-                            type: "logarithmic",
+                            id: "yRankC",
+                            type: "linear",
+                            position: "right",
+                            ticks: {
+                                max: 40,
+                                min: 0,
+                                reverse: true
+                            }
+                        },
+                        {
+                            id: "yRankG",
+                            type: "linear",
                             position: "right",
                             ticks: {
                                 max: 800,
-                                min: 1,
+                                min: 0,
                                 reverse: true
                             }
                         }
