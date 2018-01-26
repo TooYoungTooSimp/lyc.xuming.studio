@@ -10,8 +10,6 @@ pageId: 20180125
 ## 分数列表
 
 <canvas id="scoreChart"></canvas>
-<script src="https://cdn.bootcss.com/Chart.js/2.7.1/Chart.bundle.min.js"></script>
-<script src="control.js"></script>
 
 ## 文字直播
 
@@ -21,3 +19,8 @@ pageId: 20180125
 此页面在元调后经过一个半晚上上线
 
 </div >
+
+<div id='__comment'></div >
+
+<script src="https://cdn.bootcss.com/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+<script src="control.js"></script>
