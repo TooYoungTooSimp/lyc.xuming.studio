@@ -1,3 +1,6 @@
+if (!Array.prototype.last) Array.prototype.last = function () {
+    return this[this.length - 1];
+}
 $(function () {
     $.get("/api/poem?rnd=" + Date.now() + Math.random(), function (data) {
         $('#poem').text(data);
@@ -27,9 +30,11 @@ $(function () {
         rawScore.forEach(function (singleTest) {
             testNames.push(singleTest[0]);
             [0, 1].forEach(function (i) {
+                if (singleTest[1][i] === 0 && ranks[i].length > 0) singleTest[1][i] = ranks[i].last();
                 ranks[i].push(singleTest[1][i]);
             });
             [0, 1, 2, 3, 4, 5].forEach(function (i) {
+                if (singleTest[2][i] === 0 && scores[i].length > 0) singleTest[2][i] = scores[i].last();
                 scores[i].push(singleTest[2][i]);
             });
         });
