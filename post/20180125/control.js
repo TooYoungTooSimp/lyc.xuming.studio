@@ -30,7 +30,7 @@ $(function () {
                 ranks[i].push(singleTest[1][i]);
             });
             [0, 1, 2, 3, 4, 5].forEach(function (i) {
-                scores[i].push(singleTest[2][i])
+                scores[i].push(singleTest[2][i]);
             });
         });
         var scoreChart = new Chart("scoreChart", {
