@@ -5,6 +5,7 @@ pageId: 20180125
 ---
 
 # 高考直播
+> <span id="poem">&nbsp;</span>
 
 ## 分数列表
 

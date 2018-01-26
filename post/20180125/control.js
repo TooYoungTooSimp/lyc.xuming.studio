@@ -1,5 +1,8 @@
 $(function () {
-    $.getJSON("scores.json", function (rawScore) {
+    $.get("/api/poem?rnd=" + Date.now() + Math.random(), function (data) {
+        $('#poem').text(data);
+    });
+    $.getJSON("scores.json?rnd=" + Date.now() + Math.random(), function (rawScore) {
         testNames = [], ranks = [], scores = [];
         [0, 1].forEach(function (i) {
             ranks[i] = [];
