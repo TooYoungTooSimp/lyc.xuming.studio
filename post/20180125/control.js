@@ -38,6 +38,7 @@ $(function () {
                 scores[i].push(singleTest[2][i]);
             });
         });
+        var fullScore = [150, 110, 100, 90];
         var scoreChart = new Chart("scoreChart", {
             type: "line",
             data: {
@@ -117,8 +118,8 @@ $(function () {
                             type: "linear",
                             display: false,
                             ticks: {
-                                max: 150,
-                                min: 90
+                                max: fullScore[0] * 0.9,
+                                min: fullScore[0] * 0.5
                             }
                         },
                         {
@@ -126,8 +127,8 @@ $(function () {
                             type: "linear",
                             display: false,
                             ticks: {
-                                max: 110,
-                                min: 66
+                                max: fullScore[1] * 0.9,
+                                min: fullScore[1] * 0.5
                             }
                         },
                         {
@@ -135,8 +136,8 @@ $(function () {
                             type: "linear",
                             display: false,
                             ticks: {
-                                max: 100,
-                                min: 60
+                                max: fullScore[2] * 0.9,
+                                min: fullScore[2] * 0.5
                             }
                         },
                         {
@@ -144,8 +145,8 @@ $(function () {
                             type: "linear",
                             display: false,
                             ticks: {
-                                max: 90,
-                                min: 54
+                                max: fullScore[3] * 0.9,
+                                min: fullScore[3] * 0.5
                             }
                         },
                         {
@@ -153,8 +154,8 @@ $(function () {
                             type: "linear",
                             position: "left",
                             ticks: {
-                                max: 100,
-                                min: 60,
+                                max: 90,
+                                min: 50,
                                 stepSize: 5
                             },
                             scaleLabel: {
@@ -169,6 +170,7 @@ $(function () {
                             ticks: {
                                 max: 40,
                                 min: 0,
+                                stepSize: 5,
                                 reverse: true
                             }
                         },
@@ -179,6 +181,7 @@ $(function () {
                             ticks: {
                                 max: 800,
                                 min: 0,
+                                stepSize: 100,
                                 reverse: true
                             }
                         }
