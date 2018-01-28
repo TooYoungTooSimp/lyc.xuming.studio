@@ -8,8 +8,7 @@ $(function () {
     (function () {
         var targetDate = new Date("2018-06-07");
         var cFactor = 24 * 60 * 60 * 1000;
-        $("#textLive h3").each(function (idx) {
-            var element = this;
+        $("#textLive h3").each(function (idx, element) {
             var txtDate = element.innerText;
             var curDate = new Date([txtDate.slice(0, 4), txtDate.slice(4, 6), txtDate.slice(6, 8)].join("-"));
             element.innerText = [
