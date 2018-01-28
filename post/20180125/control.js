@@ -118,7 +118,8 @@ $(function () {
                             display: false,
                             ticks: {
                                 max: fullScore[0] * 0.9,
-                                min: fullScore[0] * 0.5
+                                min: fullScore[0] * 0.5,
+                                stepSize: fullScore[0] * 0.05
                             }
                         },
                         {
@@ -127,7 +128,8 @@ $(function () {
                             display: false,
                             ticks: {
                                 max: fullScore[1] * 0.9,
-                                min: fullScore[1] * 0.5
+                                min: fullScore[1] * 0.5,
+                                stepSize: fullScore[1] * 0.05
                             }
                         },
                         {
@@ -136,7 +138,8 @@ $(function () {
                             display: false,
                             ticks: {
                                 max: fullScore[2] * 0.9,
-                                min: fullScore[2] * 0.5
+                                min: fullScore[2] * 0.5,
+                                stepSize: fullScore[2] * 0.05
                             }
                         },
                         {
@@ -145,7 +148,8 @@ $(function () {
                             display: false,
                             ticks: {
                                 max: fullScore[3] * 0.9,
-                                min: fullScore[3] * 0.5
+                                min: fullScore[3] * 0.5,
+                                stepSize: fullScore[3] * 0.05
                             }
                         },
                         {
