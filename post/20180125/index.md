@@ -21,7 +21,7 @@ pageId: 20180125
 #### 定量成绩出来了
 差强人意
 ![成绩单](https://ws1.sinaimg.cn/large/005CIC0hly1fnxdic1k74j30s50133ye.jpg)
-不过相比上次来说倒是好的多了。
+不过相比上次来说倒是好的多了，讲道理，我这次考完时觉得能有550就万幸了。
 ![第一次八校联考](https://ws1.sinaimg.cn/large/005CIC0hly1fnxdilf5dyj30ud013dfp.jpg)
 
 ### 20180128
