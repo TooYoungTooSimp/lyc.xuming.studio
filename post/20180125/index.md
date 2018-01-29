@@ -18,6 +18,12 @@ pageId: 20180125
 ### 20180129
 今天的日期与倒计时真有趣。
 
+#### 定量成绩出来了
+差强人意
+![成绩单](https://ws1.sinaimg.cn/large/005CIC0hly1fnxdic1k74j30s50133ye.jpg)
+不过相比上次来说倒是好的多了。
+![第一次八校联考](https://ws1.sinaimg.cn/large/005CIC0hly1fnxdilf5dyj30ud013dfp.jpg)
+
 ### 20180128
 忽闻教育局“明日放假”之通知，exciting。  
 定性的成绩已经出来了，但是定量的还没有，不过定性的结果看起来不算很差，想来大约是能过个好年了。
