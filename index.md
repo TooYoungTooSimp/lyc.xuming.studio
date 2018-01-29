@@ -6,10 +6,12 @@ template: basic
 # 历史的行程
 > <span id="poem">&nbsp;</span>
 
-## [2017/5/1及以后]
+## [2018/1/1 至今]
 
 ### [【文字直播】高考<span class="fa fa-square-o"></span><span class="fa fa-square-o"></span>一百天（30天试运行）](/post/20180125)
 > 试运行30天
+
+## [2017/5/1 至 2017/12/31]
 
 ### [Chromium下载地址](/post/chromium)
 > 全平台均有，需要科学上网
@@ -35,7 +37,7 @@ template: basic
 ### [将以前水过的题搬到新服务器上](/post/merge_old_file)
 > 我买了一个服务器，不知道干什么，就瞎搞了一通。（然后欣喜的发现我因为全省第九而退役，这个东西没卵用了
 
-## 原来在各个OJ上水过的题目合集 [截止至2017/4/30，不完全统计] <button class="btn" data-toggle="collapse" data-target="#problemList">显示/隐藏</button> 
+## 原来在各个OJ上水过的题目合集 [截止至 2017/4/30，不完全统计] <button class="btn" data-toggle="collapse" data-target="#problemList">显示/隐藏</button> 
 
 <div id="problemList" class="collapse">
 
