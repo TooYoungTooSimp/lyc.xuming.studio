@@ -1,6 +1,6 @@
 if (!Array.prototype.last) Array.prototype.last = function () {
     return this[this.length - 1];
-}
+};
 $(function () {
     $.get("/api/poem?rnd=" + Date.now() + Math.random(), function (data) {
         $('#poem').text(data);
@@ -19,7 +19,7 @@ $(function () {
         });
     }());
     $.getJSON("scores.json?rnd=" + Date.now() + Math.random(), function (rawScore) {
-        testNames = [], ranks = [], scores = [];
+        var testNames = [], ranks = [], scores = [];
         [0, 1].forEach(function (i) {
             ranks[i] = [];
         });
