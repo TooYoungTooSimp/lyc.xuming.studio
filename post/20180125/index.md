@@ -15,9 +15,12 @@ pageId: 20180125
 
 <div id="textLive">
 
+### 20180131
+昨日的牛逼之作已经消失了$\frac{1}{3}$了。
+
 ### 20180130
 牛逼
-![](https://ws1.sinaimg.cn/large/005CIC0hly1fnz2oqhtphj33342bc1l1.jpg)
+![](https://ws1.sinaimg.cn/large/005CIC0hly1fo000cibvfj33342bctpa.jpg)
 
 ### 20180129
 今天的日期与倒计时真有趣。
