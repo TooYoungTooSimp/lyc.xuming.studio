@@ -15,6 +15,15 @@ pageId: 20180125
 
 <div id="textLive">
 
+### 20180208
+今天——反正按照我手机上的日历来说——是小年，不过有些地方是明天，还有些地方是后天。
+不过这都无甚紧要，毕竟历史上这个节日的时间也变了不只一次了。  
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52
+src="https://music.163.com/outchain/player?type=2&id=381287&auto=0&height=32"></iframe>  
+*春节必备背景音乐之一*
+
+其实我想说的是明明星期天就放假为什么我觉得时间过的这么慢！！！老子要放假！！！
+
 ### 20180207
 今日数学组正式的被清理了，sigh  
 不过垃圾真是多，满地都是各种纸。
@@ -23,6 +32,25 @@ pageId: 20180125
 作文被&#x25B0;画满了横线，然后被其不点名的精确批判了一番。
 不过&#x25B0;能领会到“我这篇作文是写着爽的”这一思想，实在值得表扬。  
 可惜由于时间原因，&#x25B0;没能看到我的“反映了植物细胞的全能性”这一答案，实为遗憾。
+
+SpaceX的重型猎鹰发射成功了，两枚助推火箭同时着陆。但芯级火箭由于减速发动机没能点燃而掉海里去了，
+据说还破坏了那艘驳船"Of Course I Still Love You".  
+两枚助推火箭都是原来回收重灌燃料的猎鹰九号，不过那个掉海里的火箭是全新的。  
+在这次发射中，马斯克把他的一辆特斯拉射向了火星。
+
+> Payload will be my midnight cherry Tesla Roadster playing Space Oddity. Destination is Mars orbit.
+> Will be in deep space for a billion years or so if it doesn’t blow up on ascent.
+> 
+> I love the thought of a car drifting apparently endlessly through space
+> and perhaps being discovered by an alien race millions of years in the future
+> 
+> [Source: https://twitter.com/elonmusk/status/936782477502246912](https://twitter.com/elonmusk/status/936782477502246912)
+
+> \*Made on Earth by humans\*
+
+还有一件事，王欣，就是快播那个，今天出狱了。或成中国十几年来第一个大家都希望他出狱的人。（抬杠之前请自行浏览相关微博及新闻评论区）  
+三年多的时光一晃而过，令人唏嘘。*技术无罪。*  
+不过在资本的浪潮之下，内容，尤其是独占内容为先的今天，空有一身技术，又能做什么呢？真是技术人的悲哀。
 
 ### 20180206
 我有时不能理解为什么有人要自杀，与其自杀，不如杀人，然后死在条子的枪下。这样至少死前还能爽一把。
