@@ -4,7 +4,7 @@ title: 高考⬜⬜一百天
 pageId: NHEEE_Countdown
 ---
 
-# 高考<span class="fa fa-square-o"></span><span class="fa fa-square-o"></span>一百天（30天试运行）
+# 高考<span class="fa fa-square-o"></span><span class="fa fa-square-o"></span>一百天
 > <span id="poem">&nbsp;</span>
 
 ## 分数列表
