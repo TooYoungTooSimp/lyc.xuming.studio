@@ -8,10 +8,13 @@ template: basic
 
 ## [2018/1/1 至今]
 
+### [【文字直播】高考<span class="fa fa-square-o"></span><span class="fa fa-square-o"></span>一百天](/post/NHEEE_Countdown)
+> 试运行30天
+
 ### [沉痛悼念史蒂芬·霍金先生](/post/20180314)
 > 史蒂芬·霍金先生于2018年3月14日在英国剑桥去世。
 
-### [【文字直播】高考<span class="fa fa-square-o"></span><span class="fa fa-square-o"></span>一百天（30天试运行）](/post/20180125)
+### [【已终止】【文字直播】高考<span class="fa fa-square-o"></span><span class="fa fa-square-o"></span>一百天（30天试运行）](/post/20180125)
 > 试运行30天
 
 ## [2017/5/1 至 2017/12/31]
