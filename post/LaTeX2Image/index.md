@@ -9,8 +9,10 @@ pageId: LaTeX2Image
 
 ## [Releases](https://github.com/TooYoungTooSimp/LaTeX2Image/releases)
 
-### v0.1-alpha
+### [v0.1-alpha](https://github.com/TooYoungTooSimp/LaTeX2Image/releases/tag/v0.1-alpha)
 All planned features work properly.
+
+[Download APK](https://github.com/TooYoungTooSimp/LaTeX2Image/releases/download/v0.1-alpha/app-release.apk)
 
 <hr />
 > <span id='poem'></span>
