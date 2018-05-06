@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+    <title>Simple Stopwatch</title>
+    <style>
+        #divTimeHolder {
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%) scale(2);
+        }
+
+        #copyright {
+            position: absolute;
+            left: 5px;
+            bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="divTimeHolder">
+        <span id="timeHolder" style="font-size: 400%"></span><br>
+        <button id="start"></button>
+        <button id="pause"></button>
+    </div>
+    <span id="copyright">&copy; 2018 TooYoungTooSimp &lt;lyc&commat;xuming.studio&gt;, All rights reserved.</span>
+    <script src="https://cdn.bootcss.com/sprintf/1.1.1/sprintf.min.js"></script>
+    <script>
+        const $ = x => document.querySelector(x);
+        let startDate = 0, lastTimeSpan = 0, HIntToken = 0, isRunning = false, timeHolder = {};
+        const updateTimeDisplay = function (timeSpan) {
+            let ms = timeSpan, sec = ms / 1000, min = sec / 60, hr = min / 60;
+            timeHolder.innerText = sprintf("%d:%02d:%02d.%03d", hr, min % 60, sec % 60, ms % 1000);
+        };
+        const clockClick = () => updateTimeDisplay(Date.now() - startDate);
+        document.addEventListener("DOMContentLoaded", () => {
+            timeHolder = $("#timeHolder");
+            let btnStart = $("#start"), btnPause = $("#pause");
+            btnStart.innerText = "开始";
+            btnPause.innerText = "停止";
+            btnPause.disabled = true;
+            btnStart.addEventListener("click", () => {
+                if (!isRunning) {
+                    isRunning = true;
+                    startDate = Date.now() - lastTimeSpan;
+                    HIntToken = setInterval(clockClick, 0);
+                    btnPause.innerText = "暂停";
+                    btnStart.innerText = "继续";
+                    btnPause.disabled = false;
+                    btnStart.disabled = true;
+                }
+            });
+            btnPause.addEventListener("click", () => {
+                if (isRunning) {
+                    isRunning = false;
+                    clearInterval(HIntToken);
+                    lastTimeSpan = Date.now() - startDate;
+                    btnPause.innerText = "停止";
+                    btnStart.innerText = "继续";
+                    btnStart.disabled = false;
+                } else {
+                    updateTimeDisplay(lastTimeSpan = 0);
+                    btnStart.innerText = "开始";
+                    btnPause.disabled = true;
+                }
+            });
+            updateTimeDisplay(0);
+        });
+    </script>
+</body>
+</html>
