@@ -520,29 +520,7 @@ HGay同学在下午考试之前发表了一番高论，在下深表赞同，现�
 
 今日我的父亲被怂恿着购买了《包子背古文》，下摘录我和父亲的聊天记录。
 
-
-<button data-toggle="collapse" data-target="#pic-20180305">显示/隐藏</button> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<button data-toggle="collapse" data-target="#pic-20180305">显示/隐藏</button>
 <div id="pic-20180305" class="collapse">
 ![](https://ws1.sinaimg.cn/large/005CIC0hgy1fpcusxxcovj30qgcmshdu.jpg)
 </div >
@@ -763,15 +741,15 @@ and perhaps being discovered by an alien race millions of years in the future
 十分作文预定  
 表达对一张无聊卷子的不满的合理方法之一就是用自己想写的答案将答题卡填满。
 
-> 划线句子表达了什么？（划线句子是歌颂一节成活的树干）  
+> 划线句子表达了什么？（划线句子是歌颂一节成活的树干）
 > 
-> 1. ……  
->    
->    > 2. ……  
->    >    
->    >    > > 3. 反映了作者的唯心主义思想。 （大概作者的马列毛，邓三科学到狗肚子里去了）  
->    >    > >    
->    >    > >    > > > > 4. 反映了植物细胞的全能性。
+> 1. ……
+> 
+> 2. ……
+> 
+> 3. 反映了作者的唯心主义思想。 （大概作者的马列毛，邓三科学到狗肚子里去了）
+> 
+> 4. 反映了植物细胞的全能性。
 
 文章合为时而著，歌诗合为事而作。这“时、事”指的是社会现实，具体事件。而我们当下的作文命题却有了一种“意识形态为纲”的风气。
 有些作文题目不再去引导一个人去思考某件事或某种言论，而是富有指向性的，旗帜鲜明的要我们去歌颂所谓主旋律。  
@@ -933,7 +911,7 @@ xc同志颇有国哥之风，并不想把课要回来。
 </div >
 
 <div id='__comment'></div >
-
-<script></script>
-
-<script></script>
+<div>
+<script src="https://cdn.bootcss.com/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+<script src="control.js"></script>
+</div>
