@@ -912,9 +912,6 @@ xc同志颇有国哥之风，并不想把课要回来。
 
 <div id='__comment'></div >
 
-<div>
+<script src="https://cdn.bootcss.com/Chart.js/2.7.1/Chart.bundle.min.js"></script >
 
-<script src="https://cdn.bootcss.com/Chart.js/2.7.1/Chart.bundle.min.js"></script>
-
-<script src="control.js"></script>
-</div >
+<script src="control.js"></script >
