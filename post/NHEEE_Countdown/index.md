@@ -1,8 +1,8 @@
 ---
-
 template: post_with_isso
 title: 高考⬜⬜一百天
 pageId: NHEEE_Countdown
+
 
 ---
 
@@ -17,6 +17,78 @@ pageId: NHEEE_Countdown
 <div id="textLive">
 
 ## 文字直播
+
+### 20180603
+
+今日上学，见高考作文复习资料之时评数则，颇感震动，现录如下，奇文共赏： <button class="btn" data-toggle="collapse" data-target="#div_20180603">显示/隐藏</button>
+
+<div id="div_20180603" class="collapse">
+
+![](https://ws1.sinaimg.cn/large/005CIC0hgy1frycu39cryj33342bc7wk.jpg)
+![](https://ws1.sinaimg.cn/large/005CIC0hgy1frycu0cemrj33342bc7wk.jpg)
+![](https://ws1.sinaimg.cn/large/005CIC0hgy1frycu4me08j33342bc1l0.jpg)
+![](https://ws1.sinaimg.cn/large/005CIC0hgy1fryctuf11zj33342bc7wk.jpg)
+![](https://ws1.sinaimg.cn/large/005CIC0hgy1fryctoa8idj33342bcb2b.jpg)
+![](https://ws1.sinaimg.cn/large/005CIC0hgy1frycu1ht56j33342bc1l0.jpg)
+![](https://ws1.sinaimg.cn/large/005CIC0hgy1fryctsk6a8j33342bcnpf.jpg)
+
+</div >
+
+### 20180602
+
+听说明天又要上课？
+
+### 20180601
+
+年轻人装成熟，成年人装嫩，怪哉！
+
+### 20180529
+
+绿色版的Python是一个好东西，但是由于distutil的问题，如果移动Python，就算Script底下的exe与解释器的相对路径不变，这些exe仍然无法运行，于是我写了一小段代码来解决这个问题。
+
+```python
+def patch_file(filename, interpreter):
+    import re
+    print("Patching {} with {} ...".format(filename, interpreter))
+    with open(filename, "rb+") as f:
+        buf = f.read()
+        match = re.search(br'#![a-zA-Z]:\\.+\.exe', buf)
+        if not match:
+            print("Patch failed.")
+        else:
+            current_interpreter = match.group()[2:].decode()
+            if current_interpreter.lower() == interpreter.lower():
+                print("Already patched, skipping ...")
+            else:
+                f.seek(match.start() + 2)
+                f.write(interpreter.encode())
+                f.write('\r\nPK'.encode())
+                f.write(buf[match.end():])
+                print("{} patched.".format(filename))
+
+
+def __main__():
+    import glob, os, argparse
+    parser = argparse.ArgumentParser(description="Patch Python interpreter path")
+    parser.add_argument("interpreter", nargs='?', default="", help="")
+    interpreter = parser.parse_args().interpreter
+    interpreter = interpreter if interpreter else os.path.join(os.getcwd().rpartition(os.sep)[0], "python.exe")
+    if not os.path.isfile(interpreter):
+        print("No valid interpreter found.")
+    else:
+        for file in glob.glob("*.exe"):
+            patch_file(file, interpreter)
+
+
+if __name__ == '__main__':
+    __main__()
+```
+
+> Inspired by [krrr@stackoverflow](https://stackoverflow.com/users/3737373/krrr) from [here](https://stackoverflow.com/a/40120999).
+
+### 20180528
+
+写了一些试卷，家中效率的确高于学校（如果不碰电脑手机的话）。
 
 ### 20180527
 
@@ -857,10 +929,10 @@ SpaceX的重型猎鹰发射成功了，两枚助推火箭同时着陆。但芯�
 在这次发射中，马斯克把他的一辆特斯拉射向了火星。
 
 > Payload will be my midnight cherry Tesla Roadster playing Space Oddity. Destination is Mars orbit.
-Will be in deep space for a billion years or so if it doesn’t blow up on ascent.
+> Will be in deep space for a billion years or so if it doesn’t blow up on ascent.
 > 
 > I love the thought of a car drifting apparently endlessly through space
-and perhaps being discovered by an alien race millions of years in the future
+> and perhaps being discovered by an alien race millions of years in the future
 > 
 > [Source: https://twitter.com/elonmusk/status/936782477502246912](https://twitter.com/elonmusk/status/936782477502246912)
 > 
@@ -924,7 +996,7 @@ and perhaps being discovered by an alien race millions of years in the future
 现在某人已经改了党章，准备要改宪法。在这“新时代”里，不久之后怕不是“两个凡是”就要复辟了吧。
 
 > 实践是检验真理的唯一标准 —— 《光明日报》社论  
-任何贬低和破坏美好文化艺术的荒谬行为都是完全错误的 —— 江泽民同志回忆文革
+> 任何贬低和破坏美好文化艺术的荒谬行为都是完全错误的 —— 江泽民同志回忆文革
 
 曾经的领导人早已意识到了这些，而为什么随着时代的进步，我们却在历史的道路上开倒车开的越来越快？以至于一直要开到封建社会去？  
 八股文声称是“为圣人立言”，而目的只是选拔忠于朝廷的官员；那么现在这种“主旋律”作文题的目的又在于选拔出什么样的人呢？
@@ -953,7 +1025,7 @@ and perhaps being discovered by an alien race millions of years in the future
 但是这样的爆发又顶什么用呢？
 
 > 勇者愤怒，抽刃向更强者；怯者愤怒，却抽刃向更弱者。  
-血书所能挣来的是什么？不过就是你的一张血书，况且并不好看。  
+> 血书所能挣来的是什么？不过就是你的一张血书，况且并不好看。  
 
 至今为止实现过的所有政体中，不可避免的会出现统治阶级与被统治阶级。
 而在学校这个微缩的社会中，学生毫无疑问的属于被统治阶级。
@@ -976,7 +1048,7 @@ and perhaps being discovered by an alien race millions of years in the future
 不知道各位有什么感觉，反正我是觉得时间过的不寻常的快。这或许与我的兴趣爱好有关。
 
 > 苟利国家生死以，岂因祸福避趋之。 $+1s$  
-垂死病中惊坐起，谈笑风生又一年。 🐸
+> 垂死病中惊坐起，谈笑风生又一年。 🐸
 
 大概就是这么个爱好。（这破站💊）  
 
