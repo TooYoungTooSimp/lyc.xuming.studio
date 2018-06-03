@@ -6,6 +6,7 @@ pageId: NHEEE_Countdown
 
 
 
+
 ---
 
 # 高考<span class="fa fa-square-o"></span><span class="fa fa-square-o"></span>一百天
@@ -49,6 +50,9 @@ pageId: NHEEE_Countdown
 一个国家的国民，要正视自己国家的历史。
 
 > 进入六月，我的fq线路是越来越不稳定了，大概就是因为坦克吧。
+> 
+> A hundred tanks along the square, one man stands and stops them there.
+> Someday soon the tide'll turn and I'll be free.
 
 ### 20180603
 
