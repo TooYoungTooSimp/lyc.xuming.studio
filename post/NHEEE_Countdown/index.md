@@ -7,6 +7,7 @@ pageId: NHEEE_Countdown
 
 
 
+
 ---
 
 # 高考<span class="fa fa-square-o"></span><span class="fa fa-square-o"></span>一百天
@@ -78,6 +79,14 @@ pageId: NHEEE_Countdown
 ### 20180601
 
 年轻人装成熟，成年人装嫩，怪哉！
+
+### 20180531
+
+仍是复习。
+
+### 20180530
+
+复习，一日无事。
 
 ### 20180529
 
@@ -1183,4 +1192,4 @@ xc同志颇有国哥之风，并不想把课要回来。
 
 <script src="https://cdn.bootcss.com/Chart.js/2.7.1/Chart.bundle.min.js"></script >
 
-<script src="control.js"></script >
+<script src="control.js"></script>
