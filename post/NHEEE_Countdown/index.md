@@ -2,12 +2,6 @@
 template: post_with_isso
 title: 高考⬜⬜一百天
 pageId: NHEEE_Countdown
-
-
-
-
-
-
 ---
 
 # 高考<span class="fa fa-square-o"></span><span class="fa fa-square-o"></span>一百天
@@ -21,6 +15,50 @@ pageId: NHEEE_Countdown
 <div id="textLive">
 
 ## 文字直播
+
+### 20180606
+
+明天就是高考，这篇巨长的流水账也该在此结束了。
+
+这一百多天里，其实还有许多的东西我没有记下来，很多要写的话也忘记写了，不过不管怎样，这篇文章的更新，也该就此终止了。
+
+我现在好像有一种“风萧萧兮易水寒，壮士一去兮不复返”的感受。
+
+至少从后天晚上开始，我就不用帮李华写作文了。
+
+### 20180605
+
+今天是考前能呆在学校的最后一天，准考证终于发下来了。
+
+离开前清理柜子，某同学竟然把我那本一度消失的竞赛教材给翻出来了，还送了一本郭松的书，实在令人感动。
+
+最后一节“课”——如果能称为课的话——上，▰播放了分辨率超低但是码率超高的“纪念视频”，大概有14GB，但是分辨率只有720x576，如图：
+
+![](https://img04.sogoucdn.com/app/a/100520146/488b2ea45a5ba5bf037ab0c56416de88)
+
+竟然是pr5.5，这是多少年前的技术了。
+
+我回家后用h265与opus重新编码了一下，获得了这样的结果：
+
+![](https://img03.sogoucdn.com/app/a/100520146/b0129085d2bb39da63a7aee1185e11c6)
+
+效果显著，大小从13.88G变为242.54M，是原来的1.7%，而画质没有什么大的变化，而且QQ里可以直接播放。
+
+在最后备份了一些文件后，我完全清理了那台电脑，这是历史性的一次重启：
+
+![](https://img01.sogoucdn.com/app/a/100520146/823ab0d2a5f18bc62850fb9bef7d30e6)
+
+那块反光真烦人，而且Eraser在PE里还不能用。
+
+至此，那台电脑的使用权已经不归我们所有了。
+
+之后回家下载备份，惊恐的发现放在机房的那台电脑突然离线。
+
+![](https://img03.sogoucdn.com/app/a/100520146/59256e836faafc91170ee8836c54a8bb)
+
+由于人生赢家还在机房，于是我在他的电脑上建了一条隧道，但是还是没能连接上这台破机子。看来只好我考完后亲自去一趟了。
+
+虽然没有成功，还是要感谢一下人生赢家的协助。
 
 ### 20180604
 
@@ -72,6 +110,8 @@ pageId: NHEEE_Countdown
 
 </div >
 
+化学课上马叔大讲他的高考，足以去写去年全国三卷的作文。
+
 ### 20180602
 
 听说明天又要上课？
@@ -108,7 +148,6 @@ def patch_file(filename, interpreter):
             else:
                 f.seek(match.start() + 2)
                 f.write(interpreter.encode())
-                f.write('\r\nPK'.encode())
                 f.write(buf[match.end():])
                 print("{} patched.".format(filename))
 
@@ -1192,4 +1231,4 @@ xc同志颇有国哥之风，并不想把课要回来。
 
 <script src="https://cdn.bootcss.com/Chart.js/2.7.1/Chart.bundle.min.js"></script >
 
-<script src="control.js"></script>
+<script src="control.js"></script >
