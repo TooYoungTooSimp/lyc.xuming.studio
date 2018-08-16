@@ -2,7 +2,7 @@
   "name": "lyc.xuming.studio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.md",
+  "private": true,
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",

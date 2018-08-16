@@ -6,6 +6,35 @@ template: basic
 # 历史的行程
 > <span id="poem">&nbsp;</span>
 
+
+<script>
+$(function(){
+var _date_1=new Date(2018,7,17);
+var _date_2=new Date(2018,7,18);
+var _date_3=Date.now();
+if(_date_1<=_date_3&&_date_3<_date_2){
+$("#xumingModal").modal({
+    backdrop: "static",
+    keyboard: false
+});
+}
+});
+</script>
+
+<div class="modal fade" id="xumingModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        今天让我们为🐸续上一秒！
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="alert('+1s!');$('#xumingModal').modal('hide')">即刻续命</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 ## [2018/1/1 至今]
 
 ### [【文字直播】高考<span class="fa fa-square-o"></span><span class="fa fa-square-o"></span>一百天](/post/NHEEE_Countdown)
