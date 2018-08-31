@@ -6,48 +6,10 @@ template: basic
 # 历史的行程
 > <span id="poem">&nbsp;</span>
 
-
-<script>
-$(function(){
-var _date_1=new Date(2018,7,17);
-var _date_2=new Date(2018,7,18);
-var _date_3=Date.now();
-if(_date_1<=_date_3&&_date_3<_date_2){
-$("#xumingModal").modal({
-    backdrop: "static",
-    keyboard: false
-});
-}
-});
-</script>
-
-<div class="modal fade" id="xumingModal" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        今天让我们为🐸续上一秒！
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" onclick="alert('+1s!');$('#xumingModal').modal('hide')">即刻续命</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 ## [2018/1/1 至今]
-
-### [【文字直播】高考<span class="fa fa-square-o"></span><span class="fa fa-square-o"></span>一百天](/post/NHEEE_Countdown)
-> 生死竞速
 
 ### [LaTeX2Image](/post/LaTeX2Image)
 > A small application that renders math to image.
-
-### [沉痛悼念史蒂芬·霍金先生](/post/20180314)
-> 史蒂芬·霍金先生于2018年3月14日在英国剑桥去世。
-
-### [【已终止】【文字直播】高考<span class="fa fa-square-o"></span><span class="fa fa-square-o"></span>一百天（30天试运行）](/post/20180125)
-> 试运行30天
 
 ## [2017/5/1 至 2017/12/31]
 
@@ -56,12 +18,6 @@ $("#xumingModal").modal({
 
 ### [一个新项目](/post/20171118)
 > github-webhook
-
-### [期末考完了](/post/20170629)
-> 刚好一个月过去了
-
-### [文化课的正式开始](/post/20170529)
-> 谁出的主意要我去考期末？
 
 ### [都他妈的结束了](/post/end_of_OI)
 > 蒟蒻的退役感言
