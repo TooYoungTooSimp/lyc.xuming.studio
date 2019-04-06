@@ -7,5 +7,6 @@ title: 巨佬们
 
 [EarthCompass](https://blog.earthc.moe/)  
 [Hamster](https://hamsterwk.github.io/)  
-[mywaythere](http://mywaythere.lofter.com/)  
-[Rika](https://rika.tech/)
+[Nonad](https://www.cnblogs.com/non-)  
+[Rika](https://rika.tech/)  
+[mywaythere](http://mywaythere.lofter.com/)
