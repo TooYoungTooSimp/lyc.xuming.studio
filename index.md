@@ -8,6 +8,13 @@ template: basic
 
 ## [2019]
 
+<div style="display: none">
+
+### [CCPC湖北省赛](/post/20190414)
+> 犹豫，就会败北
+
+</div >
+
 ### [LibcSearcher2](/post/LibcSearcher2)
 > Maybe a faster LibcSearcher
 
