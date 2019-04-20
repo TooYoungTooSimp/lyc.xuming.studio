@@ -12,4 +12,6 @@ pageId: hxd_debuglist
 
 - memset 比 for循环快得多
 
+- 有多组数据时要清空全局变量（以及各种队列）
+
 <div id="__comment"></div>
