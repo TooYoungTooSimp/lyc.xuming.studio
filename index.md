@@ -10,6 +10,9 @@ template: basic
 
 <div style="display: none">
 
+### [hxd's debug list](/post/hxd_debuglist)
+> 喵
+
 ### [CCPC湖北省赛](/post/20190414)
 > 犹豫，就会败北
 
