@@ -10,4 +10,6 @@ pageId: hxd_debuglist
 
 - cin跑的超级慢
 
+- memset 比 for循环快得多
+
 <div id="__comment"></div>
