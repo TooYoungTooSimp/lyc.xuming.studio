@@ -14,4 +14,6 @@ pageId: hxd_debuglist
 
 - 有多组数据时要清空全局变量（以及各种队列）
 
+- `std::accumulate` 的返回类型由第三个参数（初始值）决定。
+
 <div id="__comment"></div>
