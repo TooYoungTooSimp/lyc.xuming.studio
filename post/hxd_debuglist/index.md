@@ -24,4 +24,6 @@ pageId: hxd_debuglist
 
 - cin不仅跑得慢，而且跑得超级无敌螺旋飞天香蕉船慢。
 
+- 当你怎么样都过不了的时候（显然不会TLE的东西TLE了或者RE），试试把数组开大十倍，有可能是题面打错了。
+
 <div id="__comment"></div>
