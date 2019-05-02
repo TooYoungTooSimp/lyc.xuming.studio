@@ -6,6 +6,8 @@ pageId: hxd_debuglist
 
 # hxd's debug list
 
+> ACM本就逆风而行，在去机房的路上被风吹翻很正常。
+
 - 线段树要开4倍内存
 
 - cin跑得超级慢
