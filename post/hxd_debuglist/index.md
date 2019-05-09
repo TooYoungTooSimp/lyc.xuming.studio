@@ -18,6 +18,6 @@ pageId: hxd_debuglist
 - 检查不存在可行解时的输出(-1)。
 - cin不仅跑得慢，而且跑得超级无敌螺旋飞天香蕉船慢。
 - 当你怎么样都过不了的时候（显然不会TLE的东西TLE了或者RE），试试把数组开大十倍，有可能是题面打错了。
-- `explicit specialization of ‘template<class _Tp> struct std::hash’ outside its namespace must use a nested-name-specifier [-fpermissive]`for example: `struct std::hash<pair<int, int>>` but not `struct hash<pair<int, int>>`
+- `explicit specialization of 'template<class _Tp> struct std::hash' outside its namespace must use a nested-name-specifier [-fpermissive]`for example: `struct std::hash<pair<int, int>>` but not `struct hash<pair<int, int>>`
 
 <div id="__comment"></div>
