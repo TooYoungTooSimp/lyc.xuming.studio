@@ -10,6 +10,12 @@ template: basic
 
 <div style="display: none">
 
+### [蓝桥杯国赛&强网杯](/post/20190528)
+> ACM/CTF
+
+### [研究生编程大赛&校赛&武科游记&支离破碎的发言](/post/20190520)
+> 混乱的流水账
+
 ### [hxd's debug list](/post/hxd_debuglist)
 > 喵
 
