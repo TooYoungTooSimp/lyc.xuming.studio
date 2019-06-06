@@ -96,7 +96,7 @@ G题我觉得是个奇怪的图论，但是佬蒋觉得是乱搞，我就把电�
 
 比如数字太多存不下，高斯消元TLE，dijkstraWA个不停之类的。
 
-中途发了我队唯一一个clarification:"When can we get out lunch?"
+中途发了我队唯一一个clarification:"When can we get our lunch?"
 
 因为过于的饿，<span class="hid">试图给红小豆喂食的时候发现教练在看台上盯着这边，害怕（</span>
 
