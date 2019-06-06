@@ -10,6 +10,9 @@ template: basic
 
 <div style="display: none">
 
+### [ICPC南昌邀请赛](/post/20190602)
+> 首次拿牌
+
 ### [蓝桥杯国赛&强网杯](/post/20190528)
 > ACM/CTF
 
