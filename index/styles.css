@@ -15,8 +15,7 @@
 }
 
 body {
-    background: url("/index/lightbg.webp") fixed;
-    background-size: cover;
+    background: center/cover no-repeat url("/index/lightbg.webp") fixed;
 }
 
 .mdc-card {
