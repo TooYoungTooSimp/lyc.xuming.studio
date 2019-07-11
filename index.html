@@ -1,35 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
     <title>个人的奋斗与历史的行程</title>
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/combine/npm/bootstrap/dist/css/bootstrap-grid.min.css,npm/github-markdown-css,npm/material-components-web@3/dist/material-components-web.min.css"
+    <link href="https://cdn.jsdelivr.net/combine/npm/bootstrap/dist/css/bootstrap-grid.min.css,npm/github-markdown-css,npm/material-components-web/dist/material-components-web.min.css"
           rel="stylesheet">
+    <link href="/index/styles.css" rel="stylesheet">
     {{if .Env.DEBUG}}
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     {{else}}
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     {{end}}
     <script src="https://cdn.jsdelivr.net/npm/material-components-web/dist/material-components-web.min.js"></script>
-    <style>
-        .padding_16px {
-            padding: 16px;
-        }
-
-        .margin_1em {
-            margin: 1em 1em 3em;
-        }
-
-        .markdown-body h3 {
-            margin-top: 8px;
-        }
-
-        .markdown-body blockquote {
-            margin-bottom: 8px;
-        }
-    </style>
 </head>
 <body>
 <div class="container">
@@ -41,7 +25,8 @@
         <div class="mdc-card margin_1em" v-for="article in article_list">
             <div class="mdc-card__primary-action padding_16px mdc-elevation--z3" data-mdc-auto-init="MDCRipple">
                 <h3 class="mdc-typography mdc-typography--headline6">
-                    <a :href="article.path" class="card-link" v-html="article.title"></a></h3>
+                    <a :href="article.path" class="card-link" v-html="article.title"></a>
+                </h3>
                 <blockquote>
                     <p class="mdc-typography mdc-typography--subtitle2" v-html="article.comment"></p>
                 </blockquote>
