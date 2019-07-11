@@ -13,3 +13,24 @@
 .markdown-body blockquote {
     margin-bottom: 8px;
 }
+
+body {
+    background: url("/index/lightbg.webp") fixed;
+    background-size: cover;
+}
+
+.mdc-card {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.split-line {
+    height: 16px;
+    border-color: black;
+    border-style: dotted none solid;
+    border-width: 4px 0 8px;
+    margin: -3em 1em 3em;
+}
+
+a:link {
+    color: gray;
+}
