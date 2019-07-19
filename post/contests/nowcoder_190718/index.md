@@ -75,7 +75,7 @@ int main()
 
 - $0 \leq n, m \leq 10^3$
 
-- **There are at most 2019 test cases, and at most 20 of them has $max\{n,m\}>50$.**
+- **There are at most 2019 test cases, and at most 20 of them has $max\left\{n,m\right\}>50$.**
 
 红小豆写的题解，看起来是个DP。
 
