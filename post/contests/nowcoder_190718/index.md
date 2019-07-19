@@ -67,6 +67,18 @@ int main()
 
 ## [E  ABBA](https://ac.nowcoder.com/acm/contest/881/E)
 
+题目：Bobo has a string of length $2(n + m)$ which consists of characters `A` and `B`. The string also has a fascinating property: it can be decomposed into $(n + m)$ subsequences of length $2$, and among the $(n + m)$ subsequences $n$ of them are `AB`  while other $m$ of them are `BA`.
+
+ Given $n$ and $m$, find the number of possible strings modulo $(10^9+7)$.  
+
+数据范围：
+
+- $0 \leq n, m \leq 10^3$
+
+- **There are at most 2019 test cases, and at most 20 of them has $max\{n,m\}>50$.**  
+
+  > 为什么要加粗这一行呢？后面就知道了
+
 红小豆写的题解，看起来是个DP。
 
 > woc这。。意外的水。。           ——红小豆
@@ -89,6 +101,7 @@ int n, m;
 int main()
 {
 	while (cin >> n >> m) {
+        // memset(d, 0, sizeof(d)) leads to TLE.
 		for (int i = 1; i <= n + m + 1; i++)
 			for (int j = 1; j <= n + m + 1; j++)
 				d[i][j] = 0;
@@ -108,7 +121,11 @@ int main()
 }
 ```
 
+惊！明明更快的`memset`会导致TLE，但是换回传统而慢的`for`竟然AC了！这是人性的扭曲还是……（拖走
 
+好吧问题出在数据范围的第二句，最多只有不到$1\%$的数据是稍微大上一点的，其他$99\%$的都是不超过$50$的小数据，而`memset`每次都清空一个巨大的数组，就算`memset`的速度快，但是要清空的地方实在太大，于是不可避免地花掉了更多的时间而导致TLE。
+
+我实在不明白为什么会有人做出卡`memset`的事情来。
 
 ## [B Integration](https://ac.nowcoder.com/acm/contest/881/B)
 
