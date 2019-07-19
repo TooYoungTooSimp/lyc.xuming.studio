@@ -67,6 +67,49 @@ int main()
 
 ## [E  ABBA](https://ac.nowcoder.com/acm/contest/881/E)
 
+红小豆写的题解，看起来是个DP。
+
+> woc这。。意外的水。。           ——红小豆
+
+```cpp
+#define _CRT_SECURE_NO_WARNINGS
+#include<iostream>
+#include<cstdio>
+#include<algorithm>
+#include<cmath>
+#include<utility>
+#include<cstring>
+#include<cstdlib>
+using namespace std;
+typedef long long ll;
+const int mod = 1e9 + 7;
+int d[4005][2005];
+int n, m;
+
+int main()
+{
+	while (cin >> n >> m) {
+		for (int i = 1; i <= n + m + 1; i++)
+			for (int j = 1; j <= n + m + 1; j++)
+				d[i][j] = 0;
+		d[1][1] = 1;
+		for (int i = 1; i <= n + m+1; i++)
+			for (int j = 1; j <= n + m+1; j++) {
+				if (j - i <= m)d[i][j] = (d[i][j] + d[i][j - 1]) % mod;
+				if (i - j <= n)d[i][j] = (d[i][j] + d[i - 1][j]) % mod;
+			}
+		cout << d[n + m + 1][n + m + 1] << endl;
+	}
+
+#ifdef _DEBUG
+	system("pause");
+#endif
+	return 0;
+}
+```
+
+
+
 ## [B Integration](https://ac.nowcoder.com/acm/contest/881/B)
 
 <hr />
