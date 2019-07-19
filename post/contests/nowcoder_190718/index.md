@@ -81,6 +81,8 @@ int main()
 
 > woc这。。意外的水。。           ——红小豆
 
+不过zz的我还是没有搞清楚为什么可以这么写。
+
 ```cpp
 #define _CRT_SECURE_NO_WARNINGS
 #include<iostream>
