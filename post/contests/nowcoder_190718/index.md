@@ -35,7 +35,39 @@ except EOFError:
     pass
 ```
 
+## [A Equivalent Prefixes](https://ac.nowcoder.com/acm/contest/881/A)
 
+
+
+## [F Random Point in Triangle](https://ac.nowcoder.com/acm/contest/881/F)
+
+给一个点的坐标都是整数的三角形，在三角形中均匀随机地取一点，这个点与顶点的连线会将这个三角形分成三个小三角形，求三个小三角形中最大的面积的期望的36倍（保证答案是一个整数）。
+
+我完全搞不明白是为什么，但是输出三角形面积的22倍就可以AC了。
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+int main()
+{
+    ll x1, y1, x2, y2, x3, y3;
+    while (~scanf("%lld%lld%lld%lld%lld%lld", &x1, &y1, &x2, &y2, &x3, &y3))
+    {
+        x2 -= x1, y2 -= y1;
+        x3 -= x1, y3 -= y1;
+        ll ans = abs(x2 * y3 - x3 * y2) * 11;
+        printf("%lld\n", ans);
+    }
+    return 0;
+}
+```
+
+
+
+## [E  ABBA](https://ac.nowcoder.com/acm/contest/881/E)
+
+## [B Integration](https://ac.nowcoder.com/acm/contest/881/B)
 
 <hr />
 > <span id='poem'></span>
