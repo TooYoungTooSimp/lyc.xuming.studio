@@ -14,9 +14,10 @@
     margin-bottom: 8px;
 }
 
-.flex-end {
+.flex-center {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
 }
 
 body {
