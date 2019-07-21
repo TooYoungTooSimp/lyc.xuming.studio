@@ -14,12 +14,17 @@
     margin-bottom: 8px;
 }
 
+.flex-end {
+    display: flex;
+    align-items: flex-end;
+}
+
 body {
     background: center/100% 100% no-repeat url("/index/lightbg.webp") fixed;
 }
 
 .mdc-card {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.42);
 }
 
 .split-line {
@@ -31,6 +36,6 @@ body {
 }
 
 a:link {
-    color: gray;
+    color: darkgray;
     text-decoration: none;
 }

@@ -1,19 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
     <title>个人的奋斗与历史的行程</title>
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/combine/npm/bootstrap/dist/css/bootstrap-grid.min.css,npm/github-markdown-css,npm/material-components-web/dist/material-components-web.min.css"
           rel="stylesheet">
     <link href="/index/styles.css" rel="stylesheet">
-    {{if .Env.DEBUG}}
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    {{else}}
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    {{end}}
-    <script src="https://cdn.jsdelivr.net/npm/material-components-web/dist/material-components-web.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -22,33 +15,84 @@
         <span>一个人的命运啊，当然要靠自我奋斗，但是也要考虑到历史的行程。</span>
     </header>
     <div class="split-line"></div>
-    <article class="markdown-body" id="app">
-        <div class="mdc-card margin_1em" v-for="article in article_list">
-            <div class="mdc-card__primary-action padding_16px mdc-elevation--z6" data-mdc-auto-init="MDCRipple">
-                <h3 class="mdc-typography mdc-typography--headline6">
-                    <a :href="article.path" class="card-link" v-html="article.title"></a>
-                </h3>
-                <blockquote>
-                    <p class="mdc-typography mdc-typography--subtitle2" v-html="article.comment"></p>
-                </blockquote>
+    <div class="row" id="app">
+        <div class="col-md-8 col-12">
+            <article class="markdown-body">
+                <div class="mdc-card margin_1em" v-for="article in article_list">
+                    <div class="mdc-card__primary-action padding_16px mdc-elevation--z6" data-mdc-auto-init="MDCRipple">
+                        <h3 class="mdc-typography mdc-typography--headline6">
+                            <a :href="article.path" class="card-link" v-html="article.title"></a>
+                        </h3>
+                        <blockquote>
+                            <p class="mdc-typography mdc-typography--subtitle2" v-html="article.comment"></p>
+                        </blockquote>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-12">
+            <div class="mdc-card">
+                <div class="mdc-card__primary-action mdc-elevation--z6" data-mdc-auto-init="MDCRipple">
+                    <div class="mdc-card__media mdc-card__media--16-9" v-bind:style="indicatorStyle">
+                        <div class="mdc-card__media-content flex-end padding_16px">
+                            <div>
+                                <h2 class="mdc-typography mdc-typography--headline6" v-html="statStr"></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </article>
+    </div>
     <div class="margin_1em"></div>
     {{.Include "/template/footer.html"}}
 </div>
 {{.Include "/index/articles.wrapper"}}
+<script src="https://cdn.jsdelivr.net/combine/npm/promise-polyfill/dist/polyfill.min.js,npm/whatwg-fetch/dist/fetch.umd.min.js,npm/material-components-web/dist/material-components-web.min.js"></script>
+{{if .Env.DEBUG}}
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+{{else}}
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+{{end}}
 <script>
     document.addEventListener("DOMContentLoaded", function () {
+        let curveTransform = (val, p) => Math.pow(val * Math.pow(100, 1 / p) / 100, p);
         // noinspection ES6ModulesDependencies,JSUnresolvedVariable,JSUnusedGlobalSymbols
-        new Vue({
+        window.app = new Vue({
             el: "#app",
             data: {
-                article_list: articles
+                article_list: articles,
+                stability: -1
+            },
+            computed: {
+                indicatorStyle: function () {
+                    return {
+                        backgroundColor: (typeof this.stability !== "number" || this.stability === -1)
+                            ? "grey" : "hsl(" + Math.pow(this.stability / 20, 3) + ", 100%, 50%)"
+                    };
+                },
+                statStr: function () {
+                    if (typeof this.stability !== "number" || this.stability === -1)
+                        return "未知，但愿一切如常。";
+                    if (this.stability >= 90)
+                        return "精神稳定，状态良好。";
+                    if (this.stability >= 80)
+                        return "较为稳定，工作正常。";
+                    if (this.stability >= 70)
+                        return "稳定性低于正常。";
+                    if (this.stability >= 60)
+                        return "临界状态。";
+                    if (this.stability >= 40)
+                        return "失去稳定。";
+                    return "严重不稳定。";
+                }
             },
             mounted: function () {
                 this.$nextTick(mdc.autoInit);
-            },
+                fetch("/api/status/stability")
+                    .then(s => s.text())
+                    .then(s => this.stability = parseInt(s));
+            }
         });
     });
 </script>
