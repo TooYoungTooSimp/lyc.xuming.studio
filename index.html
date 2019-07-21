@@ -94,7 +94,7 @@
             },
             mounted: function () {
                 this.$nextTick(mdc.autoInit);
-                fetch("/api/status/stability")
+                fetch("/api/status/stability?rnd=" + Date.now() + Math.random())
                     .then(s => s.text())
                     .then(s => this.stability = parseInt(s));
             }
