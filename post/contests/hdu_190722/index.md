@@ -156,11 +156,6 @@ int main()
         scanf("%d%d", &n, &m);
         for (int i = 0; i < m; i++)
             scanf("%d%d%d", &E[i].f, &E[i].t, &E[i].l);
-        if (n == 1)
-        {
-            puts("0");
-            continue;
-        }
         sort(E, E + m);
         for (int i = 0; i < m; i++) addEdge(E[i].f, E[i].t, E[i].l);
         memset(dis, 0x3f, sizeof(dis));
