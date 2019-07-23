@@ -172,15 +172,13 @@ int main()
 
 ## [B Integration](https://ac.nowcoder.com/acm/contest/881/B)
 
-$$
-\text{计算}\quad
+$$ \text{计算}\quad
 \frac{1}{\pi}\int\_0^\infty\frac{1}{\prod\_{i=1}^n(a_i^2+x^2)}\mathrm{d}x \\
 \text{令}\ c_i=\frac{1}{\prod\_{j\ne i}(a\_j^2-a\_i^2)} \\
 \text{则}\ \frac{1}{\pi}\int\_0^\infty\frac{1}{\prod\_{i=1}^n(a\_i^2+x^2)}\mathrm{d}x \\
 = \frac{1}{\pi}\int\_0^\infty\sum\frac{c\_i}{a\_i^2+x^2}\mathrm{d}x \\
 =\frac{1}{\pi}\sum\frac{c\_i}{a\_i}\int\_0^\infty\frac{1}{1+(\frac{x}{a\_i})^2}\mathrm{d}\frac{x}{a\_i} \\
-=\frac{1}{2}\sum\frac{c\_i}{a\_i}
-$$
+=\frac{1}{2}\sum\frac{c\_i}{a\_i} $$
 
 
 
