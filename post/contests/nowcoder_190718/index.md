@@ -174,12 +174,12 @@ int main()
 
 $$
 \text{计算}\quad
-\frac{1}{\pi}\int_0^\infty\frac{1}{\prod_{i=1}^n(a_i^2+x^2)}\mathrm{d}x \\
-\text{令}\ c_i=\frac{1}{\prod_{j\ne i}(a_j^2-a_i^2)} \\
-\text{则}\ \frac{1}{\pi}\int_0^\infty\frac{1}{\prod_{i=1}^n(a_i^2+x^2)}\mathrm{d}x \\
-= \frac{1}{\pi}\int_0^\infty\sum\frac{c_i}{a_i^2+x^2}\mathrm{d}x \\
-=\frac{1}{\pi}\sum\frac{c_i}{a_i}\int_0^\infty\frac{1}{1+(\frac{x}{a_i})^2}\mathrm{d}\frac{x}{a_i} \\
-=\frac{1}{2}\sum\frac{c_i}{a_i}
+\frac{1}{\pi}\int\_0^\infty\frac{1}{\prod\_{i=1}^n(a_i^2+x^2)}\mathrm{d}x \\
+\text{令}\ c_i=\frac{1}{\prod\_{j\ne i}(a\_j^2-a\_i^2)} \\
+\text{则}\ \frac{1}{\pi}\int\_0^\infty\frac{1}{\prod\_{i=1}^n(a\_i^2+x^2)}\mathrm{d}x \\
+= \frac{1}{\pi}\int\_0^\infty\sum\frac{c\_i}{a\_i^2+x^2}\mathrm{d}x \\
+=\frac{1}{\pi}\sum\frac{c\_i}{a\_i}\int\_0^\infty\frac{1}{1+(\frac{x}{a\_i})^2}\mathrm{d}\frac{x}{a\_i} \\
+=\frac{1}{2}\sum\frac{c\_i}{a\_i}
 $$
 
 
