@@ -167,22 +167,25 @@ int main()
 惊！明明更快的`memset`会导致TLE，但是换回传统而慢的`for`竟然AC了！这是人性的扭曲还是……（拖走
 
 好吧问题出在数据范围的第二句，最多只有不到$1\%$的数据是稍微大上一点的，其他$99\%$的都是不超过$50$的小数据，而`memset`每次都清空一个巨大的数组，就算`memset`的速度快，但是要清空的地方实在太大，于是不可避免地花掉了更多的时间而导致TLE。
-$$
-\alpha test
-$$
-
 
 我实在不明白为什么会有人做出卡`memset`的事情来。
 
 ## [B Integration](https://ac.nowcoder.com/acm/contest/881/B)
 
-$$ \text{计算}\quad
-\frac{1}{\pi}\int\_0^\infty\frac{1}{\prod\_{i=1}^n(a_i^2+x^2)}\mathrm{d}x \\
-\text{令}\ c_i=\frac{1}{\prod\_{j\ne i}(a\_j^2-a\_i^2)} \\
-\text{则}\ \frac{1}{\pi}\int\_0^\infty\frac{1}{\prod\_{i=1}^n(a\_i^2+x^2)}\mathrm{d}x \\
+$$
+\frac{1}{\pi}\int\_0^\infty\frac{1}{\prod\_{i=1}^n(a_i^2+x^2)}\mathrm{d}x
+$$
+
+$$
+c_i=\frac{1}{\prod\_{j\ne i}(a\_j^2-a\_i^2)}
+$$
+
+$$
+\frac{1}{\pi}\int\_0^\infty\frac{1}{\prod\_{i=1}^n(a\_i^2+x^2)}\mathrm{d}x \\
 = \frac{1}{\pi}\int\_0^\infty\sum\frac{c\_i}{a\_i^2+x^2}\mathrm{d}x \\
 =\frac{1}{\pi}\sum\frac{c\_i}{a\_i}\int\_0^\infty\frac{1}{1+(\frac{x}{a\_i})^2}\mathrm{d}\frac{x}{a\_i} \\
-=\frac{1}{2}\sum\frac{c\_i}{a\_i} $$
+=\frac{1}{2}\sum\frac{c\_i}{a\_i}
+$$
 
 大概就是这样一个数学题了。
 
