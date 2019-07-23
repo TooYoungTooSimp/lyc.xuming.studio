@@ -234,6 +234,58 @@ int main()
 }
 ```
 
+## [C Euclidean Distance](https://ac.nowcoder.com/acm/contest/881/C)
+
+Bobo has a point A in the n dimension real space $\mathbb{R}^n$, whose coodinate is $(\frac{a\_1}{m},\frac{a\_2}{m},\ldots,\frac{a\_n}{m})$ where $a\_i$ and m are both integers. He wants to find another point $P=(p\_1,p\_2,\ldots,p\_n)$ meeting the following requirements.
+
+* $p\_1,p\_2,\ldots,p\_n∈R$
+* $p\_1,p\_2,\ldots,p\_n≥0$
+* $p\_1+p\_2+\cdots+p\_n=1$
+* The (squared) Euclidean distance between P and A, which is $\|A−P\|\_2^2=\sum\_{i=1}^n(\frac{a\_i}{m}−p\_i)^2$, is minimized.  
+
+首先我们令$q\_i=m\cdot p\_i$，所求即转换为$\frac{1}{m^2}\sum\_{i=1}^n(a\_i−q\_i)^2$，这样算起来会比较简单。
+
+接下来我们考虑如何将其最小化，注意到$a\_i$没有限制符号，但是$p\_i$都是非负的。这样我们只需要考虑正的$a\_i$，因为负的减非负的平方会变大，在正的$a\_i$中，因为是最小化平方和，于是应该优先将大的变小，这样我们只需要将$a\_i$从大到小排序，尽量把高的削平即可。
+
+```cpp
+#define _CRT_SECURE_NO_WARNINGS
+#define _SILENCE_CXX17_C_HEADER_DEPRECATION_WARNING
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+const int N = 1e4 + 50;
+ll a[N];
+ll gcd(ll a, ll b) { return b == 0 ? a : gcd(b, a % b); }
+int main()
+{
+    for (int n, m; ~scanf("%d%d", &n, &m);)
+    {
+        for (int i = 1; i <= n; i++) scanf("%lld", a + i);
+        sort(a + 1, a + n + 1, greater<ll>());
+        int pos = n, res = m;
+        for (int i = 1; i < n; i++)
+            if (i * (a[i] - a[i + 1]) > res)
+            {
+                pos = i;
+                break;
+            }
+            else
+                res -= i * (a[i] - a[i + 1]);
+        ll ans1 = (pos * a[pos] - res) * (pos * a[pos] - res);
+        ll ans2 = pos * m * m;
+        for (int i = pos + 1; i <= n; i++)
+            ans1 += a[i] * a[i] * pos;
+        ll g = gcd(ans1, ans2);
+        ans1 /= g, ans2 /= g;
+        if (ans2 > 1)
+            printf("%lld/%lld\n", ans1, ans2);
+        else
+            printf("%lld\n", ans1);
+    }
+    return 0;
+}
+```
+
 
 
 <hr />
