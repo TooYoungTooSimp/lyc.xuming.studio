@@ -180,7 +180,7 @@ $$ \text{计算}\quad
 =\frac{1}{\pi}\sum\frac{c\_i}{a\_i}\int\_0^\infty\frac{1}{1+(\frac{x}{a\_i})^2}\mathrm{d}\frac{x}{a\_i} \\
 =\frac{1}{2}\sum\frac{c\_i}{a\_i} $$
 
-
+大概就是这样一个数学题了。
 
 <hr />
 > <span id='poem'></span>
