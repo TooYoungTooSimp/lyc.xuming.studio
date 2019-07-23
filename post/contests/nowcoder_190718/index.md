@@ -198,6 +198,44 @@ $$
 
 大概就是这样一个数学题了。
 
+```cpp
+#define _CRT_SECURE_NO_WARNINGS
+#define _SILENCE_CXX17_C_HEADER_DEPRECATION_WARNING
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+const int N = 1e3 + 50, mod = 1e9 + 7;
+ll a[N];
+ll fpow(ll a, ll b)
+{
+    ll r = 1;
+    for (; b; b >>= 1, a = a * a % mod)
+        if (b & 1)
+            r = r * a % mod;
+    return r;
+}
+int main()
+{
+    for (int n; ~scanf("%d", &n);)
+    {
+        for (int i = 0; i < n; i++) scanf("%lld", a + i);
+        ll ans = 0;
+        for (int i = 0; i < n; i++)
+        {
+            ll p = 2 * a[i] % mod, aa = a[i] * a[i] % mod;
+            for (int j = 0; j < n; j++)
+                if (i != j)
+                    p = p * (a[j] * a[j] % mod + mod - aa) % mod;
+            ans = (ans + fpow(p, mod - 2)) % mod;
+        }
+        printf("%lld\n", ans);
+    }
+    return 0;
+}
+```
+
+
+
 <hr />
 > <span id='poem'></span>
 
