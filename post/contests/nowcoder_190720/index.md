@@ -16,7 +16,7 @@ pageId: contests_nowcoder_190720
 
 ## [F Partition problem](https://ac.nowcoder.com/acm/contest/882/F)
 
-给定$2n$阶对称矩阵$M$且保证$M_{ii}=0$，求两个大小相同的集合$A,B$，满足$A\cup B=\lbrace 1\ldots2n\rbrace,A\cap B=\emptyset$，使得$\sum\limits_{i\in A}\sum\limits_{j\in B}M_{i,j}$最大。
+给定$2n$阶对称矩阵$M$且保证$M\_{ii}=0$，求两个大小相同的集合$A,B$，满足$A\cup B=\lbrace 1\ldots2n\rbrace,A\cap B=\emptyset$，使得$\sum\limits\_{i\in A}\sum\limits\_{j\in B}M_{i,j}$最大。
 
 $\binom{2n}{n},n\leq14$好像也不是那么大的样子，所以我试了试暴搜，然后果不其然TLE了。
 
