@@ -14,7 +14,7 @@ pageId: contests_nowcoder_190718
 
 这场比赛打得非常菜，仅仅是签到成功而已（还是用Python交的
 
-所以决定补一下通过人数大于一百的题目。
+所以决定补一下通过人数大于五百的题目。
 
 ## [J Fraction Comparision](https://ac.nowcoder.com/acm/contest/881/J)
 输入$x,a,y,b$，比较$\frac{x}{a}$与$\frac{y}{b}$的大小。
