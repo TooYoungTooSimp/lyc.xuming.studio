@@ -37,7 +37,50 @@ except EOFError:
 
 ## [A Equivalent Prefixes](https://ac.nowcoder.com/acm/contest/881/A)
 
+题面：Two arrays u and v each with m distinct elements are called equivalent if and only if $RMQ(u,l,r)=RMQ(v,l,r) \text{ for all } 1\le l \le r \le m$
+ where $RMQ(w,l,r)$ denotes the **index** of the minimum element among $w\_l,w\_{l+1},\ldots,w\_r$.
+ Since the array contains distinct elements, the definition of minimum is unambiguous.
 
+ Two arrays a and b each with n distinct elements. Find the maximum number $p≤n$ where $\lbrace a\_1,a\_2,…,a\_p \rbrace$ and $\lbrace b\_1,b\_2,…,b\_p \rbrace$ are equivalent.  
+
+这题一开始样例都没看懂，最后发现这个题目里的RMQ是返回下标的！我TM，合着不会RMQ的读这题是不是还有优势些？
+
+比赛的时候躺在椅子上对天画了半天也没想出来。题解给了两种方法，一种是笛卡尔树，一种是用单调栈实现的笛卡尔树的性质。说实话我在这场比赛之前都不知道笛卡尔树是个什么东西，不过据说它能在$O(n)$的时间内构造出来，这个题等价于两个序列笛卡尔树相同的最长前缀，于是可以二分答案构造笛卡尔树，这样是$O(n\log n)$的。
+
+然后题解给了一种用单调栈求$last\_a(i) = max \lbrace j : j < i \text{ and } a\_j > a\_i \rbrace$的做法，证明是$n, last(n), last(last(n)),\ldots$是笛卡尔树的最右路径，半懂不懂的。
+
+总之这样是$O(n)$的，下附AC代码。
+
+```cpp
+#define _CRT_SECURE_NO_WARNINGS
+#define _SILENCE_CXX17_C_HEADER_DEPRECATION_WARNING
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+const int N = 1e5 + 50;
+int a[N], b[N];
+int main()
+{
+    vector<int> qa, qb;
+    for (int n; ~scanf("%d", &n);)
+    {
+        qa.clear(), qb.clear();
+        qa.push_back(0), qb.push_back(0);
+        for (int i = 1; i <= n; i++) scanf("%d", a + i);
+        for (int i = 1; i <= n; i++) scanf("%d", b + i);
+        int ans = 0;
+        for (int i = 1; i <= n; ans = i++)
+        {
+            while (a[qa.back()] > a[i]) qa.pop_back();
+            while (b[qb.back()] > b[i]) qb.pop_back();
+            if (qa.back() != qb.back()) break;
+            qa.push_back(i), qb.push_back(i);
+        }
+        printf("%d\n", ans);
+    }
+    return 0;
+}
+```
 
 ## [F Random Point in Triangle](https://ac.nowcoder.com/acm/contest/881/F)
 
