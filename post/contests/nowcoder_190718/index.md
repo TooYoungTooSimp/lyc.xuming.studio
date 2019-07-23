@@ -373,14 +373,6 @@ struct LB
             }
         return x;
     }
-    ll mx()
-    {
-        ll ans = 0;
-        for (int i = 62; i >= 0; i--)
-            if (ans >> i ^ 1)
-                ans ^= p[i];
-        return ans;
-    }
 };
 ll a[N];
 int main()
