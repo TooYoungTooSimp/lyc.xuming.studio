@@ -89,7 +89,9 @@
                         return "临界状态。";
                     if (this.stability >= 40)
                         return "失去稳定。";
-                    return "严重不稳定。";
+                    if (this.stability >= 10)
+                        return "严重不稳定。";
+                    return "绝望。";
                 }
             },
             mounted: function () {
