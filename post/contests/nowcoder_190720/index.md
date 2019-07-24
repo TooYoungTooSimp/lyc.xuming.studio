@@ -22,6 +22,43 @@ $\binom{2n}{n},n\leq14$好像也不是那么大的样子，所以我试了试暴
 
 题解上说把最后的$n^2$计算分摊到每一步就从$\binom{2n}{n}n^2$变成$\binom{2n}{n}n$了，我持怀疑态度，虽然初看起来的确如此，但是实际上，那个$n$并没有被消除，而是分摊到dfs的深度那里了，深度是$O(n)$，每层计算$O(n)$，实际上还是$\binom{2n}{n}n^2$的，而且这个题卡常数，同样一份代码昨天晚上交AC今天下午交就TLE，所以这里就不放代码了。
 
+## [A Eddy Walker](https://ac.nowcoder.com/acm/contest/882/A)
+
+[知乎：从0点出发，每次随机走1~k步，求经过点x的概率。请问为什么x趋于无穷大时，概率为2/(k+1)?](https://www.zhihu.com/question/336062847)
+
+记着加“前缀和”一类的东西。
+
+```cpp
+#define _CRT_SECURE_NO_WARNINGS
+#define _SILENCE_CXX17_C_HEADER_DEPRECATION_WARNING
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+const int mod = 1e9 + 7;
+ll fpow(ll a, ll b)
+{
+    ll r = 1;
+    for (; b; b >>= 1, a = a * a % mod)
+        if (b & 1)
+            r = r * a % mod;
+    return r;
+}
+int main()
+{
+    ll T, n, m, ans = 1;
+    scanf("%lld", &T);
+    while (T--)
+    {
+        scanf("%lld%lld", &n, &m);
+        if (n > 1) ans = m == 0 ? 0 : ans * fpow(n - 1, mod - 2) % mod;
+        printf("%lld\n", ans);
+    }
+    return 0;
+}
+```
+
+
+
 <hr />
 > <span id='poem'></span>
 
