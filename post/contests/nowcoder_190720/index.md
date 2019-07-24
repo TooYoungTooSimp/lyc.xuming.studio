@@ -50,8 +50,7 @@ int main()
     while (T--)
     {
         scanf("%lld%lld", &n, &m);
-        if (n > 1) ans = m == 0 ? 0 : ans * fpow(n - 1, mod - 2) % mod;
-        printf("%lld\n", ans);
+        printf("%lld\n", n == 1 ? ans : (ans = m == 0 ? 0 : ans * fpow(n - 1, mod - 2) % mod));
     }
     return 0;
 }
