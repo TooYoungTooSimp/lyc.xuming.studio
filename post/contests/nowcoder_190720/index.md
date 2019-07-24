@@ -14,6 +14,83 @@ pageId: contests_nowcoder_190720
 
 ## [H Second Large Rectangle](https://ac.nowcoder.com/acm/contest/882/H)
 
+参考于某大佬博客
+
+只会$O(n^4)$的红小豆学习了悬线法$O(n^2)$之后用朴素的悬线法dp了一下，结果只过了百分之六十的数据
+
+于是换成了题解的悬线处理形式，改着改着发现其实是dp里面判断是否为同一个矩形判错了，悬线法怎么写都好啦`_(:з」∠)_`
+
+原题解的更新条件部分的花括号使红小豆迷惑，于是红小豆就改了改条件判定，看起来也许好理解一点
+
+```cpp
+#include<iostream>
+#include<cstdio>
+#include<algorithm>
+#include<cmath>
+#include<cstring>
+using namespace std;
+const int maxn = 1000 + 5;
+int l[maxn][maxn], r[maxn][maxn], h[maxn][maxn];
+bool mp[maxn][maxn];
+int n, m, ml, mr;
+int ma, sma, mlx, mly,mrx,mry, slx, sly,srx,sry, curm,curs, curx, cury;
+
+int main()
+{
+    cin >> n>>m;
+    char a;
+    for (int i = 1; i <= n; i++)
+        for (int j = 1; j <= m; j++) {
+            cin >> a;
+            mp[i][j]=a-'0';
+            if (mp[i][j]) {
+                l[i][j] = r[i][j] = j;
+                h[i][j] = 1;//悬线法初始化处理
+            }
+        }
+
+    for (int i = 1; i <= n; i++) {
+        for (int j = 2; j <= m; j++)
+            if (mp[i][j] && mp[i][j - 1])l[i][j] = l[i][j - 1];//左推
+        for (int j = m - 1; j >= 1; j--)
+            if (mp[i][j] && mp[i][j + 1])r[i][j] = r[i][j + 1];//右推
+        for (int j = 1; j <= m; j++) {
+            if (i != 1 && mp[i][j] && mp[i - 1][j]) {
+                h[i][j] = h[i - 1][j] + 1;
+                l[i][j] = max(l[i][j], l[i - 1][j]);
+                r[i][j] = min(r[i][j], r[i - 1][j]);//画框框
+            }
+            int cur = (r[i][j] - l[i][j] + 1) * h[i][j];//当前面积
+            int lx, ly, rx, ry;
+            lx = i - h[i][j] + 1; rx = i;
+            ly = l[i][j]; ry = r[i][j];//左上角与右下角坐标
+　　·　　　　　　　　　　　　　　　　//↓判断是否是同一个矩形！
+            if (cur >= curm && (lx != mlx || ly != mly || rx != mrx || ry != mry)) {
+                    curs = curm, curm = cur; 
+                    slx = mlx, mlx = lx;
+                    sly = mly, mly = ly;
+                    srx = mrx, mrx = rx;
+                    sry = mry, mry = ry;
+                }//更新最大面积与次大面积
+            if(cur>curs&&cur<curm){
+                    slx = lx, sly = ly;
+                    srx = rx, sry = ry;
+                    curs = cur;
+                }//更新次大面积
+            curx = (rx - lx) * (ry - ly + 1), cury = (ry - ly) * (rx - lx + 1);
+            if (curx > curs)  curs = curx, slx = lx + 1, sly = ly, srx = rx, sry = ry;
+            if (cury > curs)  curs = cury, slx = lx, sly = ly + 1, srx = rx, sry = ry;
+　　　　　　　　//宽和长分别减一行看看是不是次大
+        }
+    }
+    cout << curs << endl;
+
+    return 0;
+}
+```
+
+
+
 ## [F Partition problem](https://ac.nowcoder.com/acm/contest/882/F)
 
 给定$2n$阶对称矩阵$M$且保证$M\_{ii}=0$，求两个大小相同的集合$A,B$，满足$A\cup B=\lbrace 1\ldots2n\rbrace,A\cap B=\emptyset$，使得$\sum\limits\_{i\in A}\sum\limits\_{j\in B}M_{i,j}$最大。
