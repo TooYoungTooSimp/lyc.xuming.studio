@@ -135,6 +135,147 @@ int main()
 
 
 
+## [E MAZE](https://ac.nowcoder.com/acm/contest/882/E)
+
+Another day's upd...
+
+快乐的线段树+快乐的转移矩阵+快乐的输入
+
+对于每行都可以构造一个像是邻接矩阵一样的转移矩阵表示同行的点互相到达与否，从(1,a)到(n,b)的方案数就是第一行的矩阵乘到第n行得到的结果矩阵的(a,b)项。
+
+输入就就就看代码吧，getchar的输入比注释里要慢200ms（错误示范）
+
+```cpp
+#include<iostream>
+#include<cstdio>
+#include<algorithm>
+#include<cmath>
+#include<cstring>
+using namespace std;
+typedef long long LL;
+int n, m, q;
+bool mp[50005][15];
+char s[50005];
+const LL mod = 1e9 + 7;
+
+struct mx {
+    LL tn[15][15];
+
+    void init()
+    {
+        for (int i = 1; i <= m; i++)
+            for (int j = 1; j <= m; j++)
+                tn[i][j] = 0;
+    }
+
+    mx operator* (const mx& t)const {
+        mx res;
+        res.init();
+
+        for (int i = 1; i <= m; i++)
+            for (int j = 1; j <= m; j++)
+                for (int k = 1; k <= m; k++)
+                    res.tn[i][j] = (res.tn[i][j] + tn[i][k] * t.tn[k][j] % mod) % mod;
+
+        return res;
+    }
+
+    void e()
+    {
+        for (int i = 1; i <= m; i++)
+            for (int j = 1; j <= m; j++)
+                tn[i][j] = (i == j);                
+    }
+
+    void get(int i)
+    {
+        init();
+        int l = 1, r = 1;
+        for (int j = 1; j <= m; j++) {
+            if (mp[i][j]) { l = r = j + 1; continue; }
+            while (r <= m && mp[i][l] == mp[i][r])r++;
+            r--;
+            for (int k = l; k <= r; k++)tn[k][j]++;
+        }
+    }
+};
+
+struct st
+{
+#define ls i<<1
+#define rs i<<1|1
+
+    struct node {
+        mx v;
+        int l, r;
+    }po[50005 << 2];
+
+    void puu(int i) { po[i].v = po[ls].v * po[rs].v; }
+
+    void build(int l, int r, int i)
+    {
+        po[i].l = l, po[i].r = r;
+        if (l == r) {
+            po[i].v.get(l);
+            return;
+        }
+        int mid = (l + r) >> 1;
+        build(l, mid, ls);
+        build(mid + 1, r, rs);
+        puu(i);
+    }
+
+    void cha(int i, int c)
+    {
+        int  l = po[i].l, r = po[i].r;
+        if (l == c && r == c) { po[i].v.get(c); return; }
+        int mid = (l + r) >> 1;
+        if (mid >= c)cha(ls, c);
+        else cha(rs, c);
+        puu(i);
+    }
+
+    mx qy(int l, int r, int i)
+    {
+        if (po[i].l >= l && r >= po[i].r)return po[i].v;
+        mx res; res.e();
+        int mid = (po[i].l + po[i].r) >> 1;
+        if (mid >= l)res = res * qy(l, r, ls);
+        if (mid < r)res = res * qy(l, r, rs);
+        return res;
+    }
+
+}seg;
+
+int main()
+{
+    scanf("%d%d%d", &n, &m, &q);
+    /*for (int i = 1; i <= n; i++){
+        scanf("%s", s+1);
+        for (int j = 1; j <= m; j++)
+            mp[i][j] = s[j] - '0';
+    }*/
+
+    getchar();//吞回车
+    for (int i = 1; i <= n; i++, getchar())//吞回车+1
+        for (int j = 1; j <= m; j++)
+            mp[i][j] = getchar() - '0';
+
+    seg.build(1, n, 1);
+    for (int i = 0; i < q; i++) {
+        int p, a, b;
+        scanf("%d%d%d", &p, &a, &b);
+        if (p == 1) { mp[a][b] ^= 1; seg.cha(1, a); }
+        else { mx t = seg.qy(1, n, 1); printf("%lld\n", t.tn[a][b]); }
+    }
+
+    return 0;
+}
+
+```
+
+
+
 <hr />
 > <span id='poem'></span>
 

@@ -51,6 +51,73 @@ int main()
 
 
 
+## [F Planting Trees](https://ac.nowcoder.com/acm/contest/883/F)
+
+再说一次cin不仅慢还螺旋无敌飞天香蕉船慢！！！
+
+快读是真地快
+
+悬线法开三个数组都会互相干扰，反正就是不行
+
+单调队列，请
+
+```cpp
+#include<iostream>
+#include<cstdio>
+#include<algorithm>
+#include<cmath>
+#include<cstring>
+using namespace std;
+typedef long long LL;
+int m, n, t;
+int qi[505], qa[505];
+int mp[505][505], mi[507], ma[507];
+ 
+inline int rd()
+{
+    int s = 0, w = 1; char ch = getchar();
+    while (ch < '0' || ch > '9') { if (ch == '-') w = -1; ch = getchar(); }
+    while (ch >= '0' && ch <= '9') s = s * 10 + ch - '0', ch = getchar();
+    return s * w;
+}
+ 
+int main()
+{
+    scanf("%d",&t);
+    while (t--) {
+        scanf("%d%d", &n, &m);
+        for (int i = 1; i <= n; i++)
+            for (int j = 1; j <= n; j++)
+                scanf("%d", &mp[i][j]);
+        int ans = 0;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) { mi[j] = 0x3f3f3f3f; ma[j] = -0x3f3f3f3f; }
+            for (int j = i; j <= n; j++) {
+                for (int k = 1; k <= n; k++) { mi[k] = min(mi[k], mp[k][j]);ma[k] = max(ma[k], mp[k][j]); }
+                int f1 = 0, f2 = 0, b1 = 0, b2 = 0;
+                int now = 0;
+                for (int k = 1; k <= n; k++) {
+                    while (f1 != b1 && mi[k] <= mi[qi[f1]])f1--;
+                    while (f2 != b2 && ma[k] >= ma[qa[f2]])f2--;
+                    qi[++f1] = k;
+                    qa[++f2] = k;
+                    while(f1!=b1&&f2!=b2&&ma[qa[b2+1]]-mi[qi[b1+1]]>m)
+                        if (qa[b2+1] > qi[b1+1]) {now = qi[b1 + 1];  b1++;}
+                        else {now = qa[b2 + 1]; b2++;}
+                    ans = max(ans, (j - i + 1) * (k - now));
+                }
+            }
+        }
+        cout << ans << endl;
+    }
+
+    return 0;
+}
+
+```
+
+
+
 ## [J LRU management](https://ac.nowcoder.com/acm/contest/883/J)
 
 走之前和小C在机房谈论面试，小C说考到了LRU的原理什么的，结果今天就变成题了。

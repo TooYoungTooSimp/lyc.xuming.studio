@@ -432,6 +432,17 @@ int main()
 >
 > 那么，就再A上一个题吧，至少，这是个能让我能逃避现世的东西啊。
 
+## [I Points Division](https://ac.nowcoder.com/acm/contest/881/I)
+
+Another day's upd...
+
+参考于此：https://blog.csdn.net/u013534123/article/details/96465704
+
+迷之线段树dp，补题代码看起来和题解没什么大区别。。正在魔改，研究为什么不能（能）从右上往左下扫点，尚无合理结果。。。
+
+
+
+
 <hr />
 > <span id='poem'></span>
 
