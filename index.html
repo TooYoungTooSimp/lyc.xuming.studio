@@ -77,20 +77,13 @@
                     };
                 },
                 statStr: function () {
-                    if (typeof this.stability !== "number" || this.stability === -1)
-                        return "未知，但愿一切如常。";
-                    if (this.stability >= 90)
-                        return "精神稳定，状态良好。";
-                    if (this.stability >= 80)
-                        return "较为稳定，工作正常。";
-                    if (this.stability >= 70)
-                        return "稳定性低于正常。";
-                    if (this.stability >= 60)
-                        return "临界状态。";
-                    if (this.stability >= 40)
-                        return "失去稳定。";
-                    if (this.stability >= 10)
-                        return "严重不稳定。";
+                    if (typeof this.stability !== "number" || this.stability === -1) return "未知，但愿一切如常。";
+                    if (this.stability >= 90) return "精神稳定，状态良好。";
+                    if (this.stability >= 80) return "较为稳定，工作正常。";
+                    if (this.stability >= 70) return "稳定性低于正常。";
+                    if (this.stability >= 60) return "临界状态。";
+                    if (this.stability >= 40) return "失去稳定。";
+                    if (this.stability >= 10) return "严重不稳定。";
                     return "绝望。";
                 }
             },
