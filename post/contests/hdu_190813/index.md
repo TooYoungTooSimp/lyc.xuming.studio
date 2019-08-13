@@ -56,6 +56,15 @@ int main()
 
 > 如果写一个分数类的话可能会因为分子分母不可约导致爆`long long`，题目要输出$P∗Q{−1} \pmod M$的时候直接每次求个逆元就好。这样算出来的东西甚至可以求前缀和。
 
+$$
+\begin{align}
+ f\_{x\to x+1}&=\frac{a\_i}{p\_1}+\frac{1-p\_i}{p\_i}(s\_i-s\_{x\_i}) \\\ \\
+ s\_{i+1}&=s\_i+f\_{x\to x+1}
+\end{align}
+$$
+
+
+
 ```cpp
 #define _CRT_SECURE_NO_WARNINGS
 #define _SILENCE_CXX17_C_HEADER_DEPRECATION_WARNING
