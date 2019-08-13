@@ -1,11 +1,14 @@
 [
-
+    {
+        "title": "2019杭电多校第七场",
+        "path": "/post/contests/hdu_190813/",
+        "comment": "全校爆零"
+    },
 	{
         "title": "2019牛客多校第三场",
         "path": "/post/contests/nowcoder_190725/",
         "comment": "没有信号"
     },
-
     {
         "title": "2019杭电多校第一场",
         "path": "/post/contests/hdu_190722/",
