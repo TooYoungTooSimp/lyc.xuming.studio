@@ -21,5 +21,6 @@ pageId: hxd_debuglist
 - 当你怎么样都过不了的时候（显然不会TLE的东西TLE了或者RE），试试把数组开大十倍，有可能是题面打错了。
 - `explicit specialization of 'template<class _Tp> struct std::hash' outside its namespace must use a nested-name-specifier [-fpermissive]`for example: `struct std::hash<pair<int, int>>` but not `struct hash<pair<int, int>>`
 - 重构代码之后记得把前一次的所有不该用的东西清掉；记得if之后还是要else break的；
+- 如果写一个分数类的话可能会因为分子分母不可约导致爆`long long`，题目要输出$P*Q^{-1} \pmod{M}$的时候直接每次求个逆元就好。这样算出来的东西甚至可以求前缀和。
 
 <div id="__comment"></div>
