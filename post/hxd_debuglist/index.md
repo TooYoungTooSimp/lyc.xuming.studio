@@ -22,5 +22,6 @@ pageId: hxd_debuglist
 - `explicit specialization of 'template<class _Tp> struct std::hash' outside its namespace must use a nested-name-specifier [-fpermissive]`for example: `struct std::hash<pair<int, int>>` but not `struct hash<pair<int, int>>`
 - 重构代码之后记得把前一次的所有不该用的东西清掉；记得if之后还是要else break的；
 - 如果写一个分数类的话可能会因为分子分母不可约导致爆`long long`，题目要输出$P*Q^{-1} \pmod{M}$的时候直接每次求个逆元就好。这样算出来的东西甚至可以求前缀和。
+- `for (int i = 0; i < 100000000; i++)`里面出现的`i * i`会爆范围，比如打质数表的时候。
 
 <div id="__comment"></div>

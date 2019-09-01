@@ -6,9 +6,41 @@ pageId: contests_hdu_190724
 
 # 2019杭电多校第二场
 
-lj充分发挥了他的
+lj充分发挥了他的乱搞/阅读样例能力，做出了许多不可做题。
+## [HDU 6600 Just Skip The Problem](http://acm.hdu.edu.cn/showproblem.php?pid=6600)
 
-## 6592 Beauty Of Unimodal Sequence
+计算$n!\bmod{10^6+3}$。
+$$
+n!\bmod{10^6+3}=
+\begin{cases}
+\prod\limits_{i=1}^n i \bmod{10^6+3} & \text{ if } n < 10^6+3 \\ 
+0 & \text{ else }
+\end{cases}
+$$
+
+```cpp
+#include <cstdio>
+using namespace std;
+const long long mod = 1e6 + 3;
+int main()
+{
+    for (long long n; ~scanf("%lld", &n);)
+        if (n >= mod)
+            puts("0");
+        else
+        {
+            long long ans = 1;
+            for (int i = 1; i <= n; i++)
+                ans = ans * i % mod;
+            printf("%lld\n", ans);
+        }
+    return 0;
+}
+```
+
+
+
+## [HDU 6592 Beauty Of Unimodal Sequence](http://acm.hdu.edu.cn/showproblem.php?pid=6592)
 
 首先对序列正着跑一边LIS，再反着跑一遍，分别记录下标（ppo-positive，opo-over：P）顺便给po初始化一下
 
