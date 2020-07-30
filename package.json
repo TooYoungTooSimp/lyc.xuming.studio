@@ -6,7 +6,7 @@
   "scripts": {
     "prebuild": "tsc -p scripts --outDir scripts/dist --pretty",
     "watch": "tsc -p scripts --outDir scripts/dist --watch --pretty",
-    "build":"node scripts/dist/build.js"
+    "build": "node scripts/dist/build.js"
   },
   "repository": {
     "type": "git",
