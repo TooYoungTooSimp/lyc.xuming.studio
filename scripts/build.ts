@@ -3,10 +3,9 @@ import config from "./config"
 import fs from "fs/promises"
 import path from "path";
 import marked from "marked";
-import { changeExt, getCachedReaderSync, readFileText, splitMarkdown } from "./utils";
+import { changeExt, getCachedReaderSync, mkdirSafe, readFileText, splitMarkdown } from "./utils";
 import { minifyHTML, minifyJS, minifyJSON } from "./minify";
 import winston, { loggers } from "winston";
-import { minify } from "uglify-js";
 import filetypes from "./filetypes";
 
 let global: any = {};
@@ -35,7 +34,7 @@ async function main() {
         global.tmplConfig[k] = path.join(config.tmplConfig.base, global.tmplConfig[k])
     });
     global.reader = getCachedReaderSync({});
-    await fs.mkdir(config.dstDir);
+    await mkdirSafe(config.dstDir);
     await walkDir(config.srcDir);
 }
 
@@ -47,7 +46,7 @@ async function walkDir(curDir: string) {
         let target = path.join(config.dstDir, path.relative(config.srcDir, item));
         if (itemStat.isDirectory()) {
             if (config.internalPaths.includes(path.basename(item))) return;
-            await fs.mkdir(target, { recursive: true });
+            await mkdirSafe(target);
             walkDir(item);
         }
         if (itemStat.isFile()) {

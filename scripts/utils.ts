@@ -1,9 +1,15 @@
-import fs from "fs/promises"
+import { promises as fs, constants as fs_constants } from "fs"
 import path from "path";
 import yaml from "js-yaml";
 import { readFileSync } from "fs";
+import { async } from "q";
+
 export const readFileText = async (file: string) => fs.readFile(file, { encoding: "utf-8" });
 export const readFileTextSync = (file: string) => readFileSync(file, { encoding: "utf-8" });
+export const pathExist = async (pth: string) =>
+    fs.access(pth, fs_constants.F_OK)
+        .then(() => true)
+        .catch(() => false)
 
 export const changeExt = (file: string, newExt: string) =>
     path.join(path.dirname(file), path.basename(file, path.extname(file)) + newExt);
@@ -31,4 +37,9 @@ export function getCachedReaderSync(cache: Object) {
         }
     };
     return new Proxy(cache, handler);
+}
+
+export async function mkdirSafe(pth: string) {
+    if (!await pathExist(pth))
+        await fs.mkdir(pth, { recursive: true });
 }
