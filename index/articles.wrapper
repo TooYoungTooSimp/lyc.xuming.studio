@@ -1,1 +1,0 @@
-<script>let articles={{.Include "/index/articles.json"}}</script>

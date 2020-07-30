@@ -1,0 +1,1 @@
+<script>let articles={{> /index/articles.json}};</script>
