@@ -4,7 +4,9 @@
   "description": "",
   "private": true,
   "scripts": {
-    "watch": "tsc -p scripts --outDir scripts/dist --watch --pretty"
+    "prebuild": "tsc -p scripts --outDir scripts/dist --pretty",
+    "watch": "tsc -p scripts --outDir scripts/dist --watch --pretty",
+    "build":"node scripts/dist/build.js"
   },
   "repository": {
     "type": "git",
