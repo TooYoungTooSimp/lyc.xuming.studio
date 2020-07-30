@@ -35,6 +35,7 @@ async function main() {
         global.tmplConfig[k] = path.join(config.tmplConfig.base, global.tmplConfig[k])
     });
     global.reader = getCachedReaderSync({});
+    await fs.mkdir(config.dstDir);
     await walkDir(config.srcDir);
 }
 
