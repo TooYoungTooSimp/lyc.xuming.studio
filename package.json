@@ -4,8 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "prebuild": "tsc -p scripts --outDir scripts/dist --pretty",
-    "watch": "tsc -p scripts --outDir scripts/dist --watch --pretty",
+    "prebuild": "tsc -p scripts/src --outDir scripts/dist --pretty",
+    "watch": "tsc -p scripts/src --outDir scripts/dist --watch --pretty",
     "build": "node scripts/dist/build.js"
   },
   "repository": {
@@ -32,7 +32,8 @@
     "js-yaml": "^3.14.0",
     "marked": "^1.1.1",
     "mustache": "^4.0.1",
-    "typescript": "^3.9.7",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.0.0-dev.20200801",
     "uglify-js": "^3.10.0",
     "winston": "^3.3.3"
   }

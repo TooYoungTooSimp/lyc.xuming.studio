@@ -20,10 +20,10 @@ export const minifyHTML = (content: string) =>
         sortClassName: true,
         trimCustomFragments: true,
         useShortDoctype: true,
-
     });
 
 export const minifyJS = (js: string) =>
-    js_minify(js, {}).code ?? "";
+    js_minify(js, {
+    }).code ?? "";
 
 export const minifyJSON = (json: string) => JSON.stringify(JSON.parse(json));
