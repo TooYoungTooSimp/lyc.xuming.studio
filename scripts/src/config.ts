@@ -12,7 +12,7 @@ let config = {
     dstDir: "./dist",
     preserveMarkdown: false,
     internalPaths: [
-        "template"
+        "template/**/*"
     ],
 };
 
