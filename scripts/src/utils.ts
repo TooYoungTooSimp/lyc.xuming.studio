@@ -1,48 +1,32 @@
-import { promises as fs, constants as fs_constants } from "fs"
+import { promises as fs, constants as fs_constants, readFileSync } from "fs"
 import path from "path";
-import yaml from "js-yaml";
-import { readFileSync } from "fs";
 
 export const readFileText = async (file: string) => fs.readFile(file, { encoding: "utf-8" });
 export const readFileTextSync = (file: string) => readFileSync(file, { encoding: "utf-8" });
 export const pathExist = async (pth: string) =>
-    fs.access(pth, fs_constants.F_OK)
-        .then(() => true)
-        .catch(() => false)
+    fs.access(pth, fs_constants.F_OK).then(() => true).catch(() => false)
 
 export const changeExt = (file: string, newExt: string) =>
     path.join(path.dirname(file), path.basename(file, path.extname(file)) + newExt);
 
-export function getCachedReaderSync(cache: Object) {
-    const handler = {
-        get(obj: any, prop: string) {
-            if (!obj[prop])
-                obj[prop] = readFileTextSync(prop);
-            return obj[prop];
-        }
-    };
-    return new Proxy(cache, handler);
-}
+export const getCachedReaderSync = (cache: Object) =>
+    new Proxy(cache, {
+        get: (obj: any, prop: string) =>
+            obj[prop] ??= readFileTextSync(prop)
+    });
 
-export function getCachedReaderAsync(cache: Object) {
-    const handler = {
-        async get(obj: any, prop: string) {
-            if (!obj[prop])
-                obj[prop] = await readFileText(prop);
-            return obj[prop];
-        }
-    };
-    return new Proxy(cache, handler);
-}
-
-
+export const getCachedReaderAsync = (cache: Object) =>
+    new Proxy(cache, {
+        get: async (obj: any, prop: string) =>
+            obj[prop] ??= await readFileText(prop)
+    });
 
 export async function mkdirSafe(pth: string) {
     if (!await pathExist(pth))
         await fs.mkdir(pth, { recursive: true });
 }
 
-export async function ensureFileCopy(pth: string) {
+export async function ensureFileWrite(pth: string) {
     await mkdirSafe(path.dirname(pth));
 }
 

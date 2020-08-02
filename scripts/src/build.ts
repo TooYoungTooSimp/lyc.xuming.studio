@@ -1,9 +1,9 @@
 import config from "./config"
 import fs from "fs/promises"
 import path from "path";
-import { getCachedReaderSync, mkdirSafe, readFileText } from "./utils";
+import { mkdirSafe } from "./utils";
 import winston from "winston";
-import processFile from "./process";
+import processFile from "./processFile";
 
 
 async function main() {
@@ -41,7 +41,6 @@ async function walkDir(curDir: string) {
         let target = path.join(config.dstDir, path.relative(config.srcDir, item));
         if (itemStat.isDirectory()) {
             if (config.internalPaths.includes(path.basename(item))) return;
-            await mkdirSafe(target);
             walkDir(item);
         }
         if (itemStat.isFile()) {

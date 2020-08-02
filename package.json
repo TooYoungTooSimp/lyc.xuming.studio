@@ -6,7 +6,9 @@
   "scripts": {
     "prebuild": "tsc -p scripts/src --outDir scripts/dist --pretty",
     "watch": "tsc -p scripts/src --outDir scripts/dist --watch --pretty",
-    "build": "node scripts/dist/build.js"
+    "build": "node scripts/dist/build.js",
+    "clean": "rimraf dist",
+    "distclean": "rimraf dist scripts/dist"
   },
   "repository": {
     "type": "git",
