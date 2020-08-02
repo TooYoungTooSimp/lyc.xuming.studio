@@ -28,9 +28,10 @@ async function main() {
         })
     };
 
-
+    global.ext.cnt = 0;
     await mkdirSafe(config.dstDir);
     await walkDir(config.srcDir);
+    global.ext.logger.info(`Build finished. ${global.ext.cnt} files processed.`);
 }
 
 
@@ -46,11 +47,11 @@ async function walkDir(curDir: string) {
         if (itemStat.isFile()) {
             let curFile: FileState = {
                 path: item,
-                extInfo: {},
                 target,
+                extInfo: {},
             };
             await processFile(curFile);
-            global.ext.logger.info(`processed file ${item}`);
+            global.ext.logger.info(`[${(++global.ext.cnt).toString().padStart(4)}] processed file ${item}`);
         }
     });
 }
