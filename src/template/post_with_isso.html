@@ -3,14 +3,14 @@
 <head>
     <title>{{title}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {{> /template/stdinc.html}}
+    {{inc "/template/stdinc.html"}}
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col-md-9 col-12 border-left border-right">
                 <article class="markdown-body">
-                    {{&body}}
+                    {{{body}}}
                 </article>
             </div>
             <div class="col-md-3 col-12 border-left border-right">
@@ -20,7 +20,7 @@
                 <img class="img-fluid" src="https://i.loli.net/2019/05/02/5ccaf1f4b554a.png"/>
             </div>
         </div>
-        {{> /template/footer.html}}
+        {{inc "/template/footer.html"}}
     </div>
     <script>
         $("#__comment").html('<hr /><div id="isso-thread"></div>');

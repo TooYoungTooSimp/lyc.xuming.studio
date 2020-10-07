@@ -3,12 +3,12 @@
 <head>
     <title>{{title}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {{> /template/stdinc.html}}
+    {{inc "/template/stdinc.html"}}
 </head>
 <body>
     <div class="container">
         <article class="markdown-body">{{&body}}</article>
-        {{> /template/footer.html}}
+        {{inc "/template/footer.html"}}
     </div>
 </body>
 </html>

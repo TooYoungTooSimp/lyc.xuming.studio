@@ -1,1 +1,1 @@
-<script>let articles={{> /index/articles.json}};</script>
+<script>let articles={{inc "/index/articles.json"}};</script>

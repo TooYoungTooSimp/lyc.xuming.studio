@@ -56,7 +56,6 @@ async function main() {
             logger.error(e);
         }
     );
-    logger.info(`Build finished. ${fileCount} files processed.`);
 }
 
 main();
