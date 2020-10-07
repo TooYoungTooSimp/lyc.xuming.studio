@@ -5,3 +5,4 @@ declare namespace NodeJS {
 }
 
 type AsyncIdentityFuncType<T> = (arg: T) => Promise<T>;
+type IdentityFuncType<T> = (arg: T) => T;

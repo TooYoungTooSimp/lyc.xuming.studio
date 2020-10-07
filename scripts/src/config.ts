@@ -1,10 +1,6 @@
-import { extname, join, relative } from "path";
-import HTMLProcessor from "./processors/HTMLProcessor";
-import CopyFileProcessor from "./processors/CopyFileProcessor";
-import MarkdownProcessor from "./processors/MarkdownProcessor";
-import ReadFileProcessor from "./processors/ReadFileProcessor";
-import WriteFileProcessor from "./processors/WriteFileProcessor";
-import TemplateProcessor from "./processors/TemplateProcessor";
+import { extname, join, relative, sep } from "path";
+import { CopyFileProcessor, HTMLProcessor, MarkdownProcessor, ReadFileProcessor, TemplateProcessor, WriteFileProcessor } from "./processors/index";
+
 import { AsyncIdentityFunc } from "./utils";
 
 let config = {
@@ -17,7 +13,8 @@ let config = {
 };
 
 let htmlWithTmplList = [
-    "index.html"
+    "index.html",
+    "index/index.html",
 ];
 
 let procs = {
@@ -35,11 +32,11 @@ let procs = {
         base: "./src",
     }),
     WriteFile: WriteFileProcessor(),
-}
+};
 
 let rules: ProcessRules = [
     {
-        test: path => extname(path) === '.md',
+        test: path => extname(path) === ".md",
         use: [
             config.preserveMarkdown ? procs.CopyFile : AsyncIdentityFunc,
             procs.ReadFile,
@@ -50,7 +47,7 @@ let rules: ProcessRules = [
         ],
     },
     {
-        test: path => htmlWithTmplList.includes(relative(config.srcDir, path)),
+        test: path => htmlWithTmplList.includes(relative(config.srcDir, path).replace(sep, "/")),
         use: [
             procs.ReadFile,
             procs.Template,
@@ -59,7 +56,7 @@ let rules: ProcessRules = [
         ]
     },
     {
-        test: path => ['.htm', '.html'].includes(extname(path)),
+        test: path => [".htm", ".html"].includes(extname(path)),
         use: [
             procs.ReadFile,
             procs.HTML,
@@ -67,7 +64,7 @@ let rules: ProcessRules = [
         ],
     },
     {
-        test: path => extname(path) === '.js',
+        test: path => extname(path) === ".js",
         use: [
             procs.ReadFile,
             procs.WriteFile,
@@ -84,4 +81,4 @@ let rules: ProcessRules = [
 export default {
     ...config,
     rules,
-}
+};

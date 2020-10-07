@@ -23,10 +23,10 @@ const minifyHTML = (content: string) =>
 
     });
 
-export default function HTMLProcessor(config: any = {}) {
+export function HTMLProcessor(config: any = {}) {
     return async function (state: FileState) {
         if (config.minify)
             state.content = minifyHTML(state.content!);
         return state;
-    }
+    };
 }
