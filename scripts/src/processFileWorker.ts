@@ -19,6 +19,7 @@ function addNewTask(task: any) {
             stat = await rule(stat);
         }
         stat.extInfo.tid = threadId;
+        delete stat.content;
         return stat;
     })()
         .then(v => parentPort!.postMessage({
