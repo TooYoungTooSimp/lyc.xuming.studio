@@ -1,4 +1,3 @@
-import { changeExt } from "../utils";
 import { minify as html_minify } from "html-minifier-terser";
 
 const minifyHTML = (content: string) =>

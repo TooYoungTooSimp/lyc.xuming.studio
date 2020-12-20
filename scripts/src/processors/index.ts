@@ -6,3 +6,4 @@ export { ReadFileProcessor } from "./ReadFileProcessor";
 export { TemplateProcessor } from "./TemplateProcessor";
 export { WriteFileProcessor } from "./WriteFileProcessor";
 export { MinifyJSProcessor } from "./MinifyJSProcessor";
+export { MinifyCSSProcessor } from "./MinifyCSSProcessor";
