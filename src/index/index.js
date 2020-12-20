@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         body.style.backgroundImage = `url(${objurl})`;
         pixiv_id.innerHTML = `PixivID: ${cur_image["illust_id"]}`;
         pixiv_id.href = cur_image["www_member_illust_medium_url"];
+        pixiv_id.title = `${cur_image["illust_title"]} @ ${cur_image["user_name"]}`;
         if (cur_objurl) URL.revokeObjectURL(cur_objurl);
         cur_objurl = objurl;
         setTimeout(changeBackground, 60 * 1000);
