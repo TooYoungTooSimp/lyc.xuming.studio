@@ -17,6 +17,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         pixiv_id.href = cur_image["www_member_illust_medium_url"];
         if (cur_objurl) URL.revokeObjectURL(cur_objurl);
         cur_objurl = objurl;
-        setTimeout(changeBackground, 10 * 1000);
+        setTimeout(changeBackground, 60 * 1000);
     })();
 });
