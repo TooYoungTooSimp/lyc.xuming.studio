@@ -53,7 +53,7 @@ async function main() {
             logger.info(`[${numPadStart(++fileIndex, numDispIdent)} / ${fileCount}] Thread[${numPadStart(m.extInfo.tid, 2)}] processed file ${m.extInfo.item}`);
         },
         (e) => {
-            logger.error(e);
+            logger.error(`[${numPadStart(++fileIndex, numDispIdent)} / ${fileCount}] throws:\n${e}`);
         }
     );
 }
