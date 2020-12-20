@@ -1,5 +1,5 @@
 import { extname, join, relative, sep } from "path";
-import { CopyFileProcessor, HTMLProcessor, MarkdownProcessor, ReadFileProcessor, TemplateProcessor, WriteFileProcessor } from "./processors/index";
+import { CopyFileProcessor, HTMLProcessor, MarkdownProcessor, MinifyJSProcessor, ReadFileProcessor, TemplateProcessor, WriteFileProcessor } from "./processors/index";
 
 import { AsyncIdentityFunc } from "./utils";
 
@@ -32,6 +32,7 @@ let procs = {
         base: "./src",
     }),
     WriteFile: WriteFileProcessor(),
+    MinifyJS: MinifyJSProcessor(),
 };
 
 let rules: ProcessRules = [
@@ -67,6 +68,7 @@ let rules: ProcessRules = [
         test: path => extname(path) === ".js",
         use: [
             procs.ReadFile,
+            procs.MinifyJS,
             procs.WriteFile,
         ],
     },

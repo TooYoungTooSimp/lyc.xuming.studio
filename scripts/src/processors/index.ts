@@ -5,3 +5,4 @@ export { MarkdownProcessor } from "./MarkdownProcessor";
 export { ReadFileProcessor } from "./ReadFileProcessor";
 export { TemplateProcessor } from "./TemplateProcessor";
 export { WriteFileProcessor } from "./WriteFileProcessor";
+export { MinifyJSProcessor } from "./MinifyJSProcessor";

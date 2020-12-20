@@ -28,6 +28,6 @@ function addNewTask(task: any) {
         }))
         .catch(e => parentPort!.postMessage({
             type: "taskFailed",
-            payload: e.toString(),
+            payload: e.stack,
         }));
 }

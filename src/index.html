@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+    <script src="/index/index.js" defer></script>
 </head>
 
 <body>
@@ -21,10 +22,36 @@
             margin: 2rem 0;
             min-height: calc(100vh - 4rem);
             box-shadow: 0 0 10px #888888;
+            opacity: 85%;
+            background-color: white;
         }
 
         #content>p {
             text-indent: 2em;
+        }
+
+        body {
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transition: background 2s;
+        }
+
+        #pixiv_id_wrapper {
+            position: fixed;
+            z-index: -1;
+            bottom: 0.2rem;
+            right: 0.2rem;
+            border-radius: 0.1rem;
+            padding: 0.05rem 0.2rem;
+            font-size: small;
+            background-color: white;
+            opacity: 50%;
+        }
+
+        #pixiv_id {
+            color: #888888;
         }
     </style>
     <div class="container">
@@ -33,6 +60,9 @@
         </article>
     </div>
     <div hidden><a href="/index">old index</a></div>
+    <div id="pixiv_id_wrapper">
+        <a id="pixiv_id"></a>
+    </div>
 </body>
 
 </html>
