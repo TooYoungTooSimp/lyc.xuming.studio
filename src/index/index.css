@@ -26,8 +26,8 @@ body {
     border-radius: 0.3rem;
     padding: 0.1rem 0.3rem;
     font-size: small;
-    background-color: white;
-    opacity: 50%;
+    background-color: rgba(23,24,25,.3);
+    color: white;
     line-height: 1;
 }
 
