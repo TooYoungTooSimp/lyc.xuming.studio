@@ -3,6 +3,7 @@ import { join } from "path";
 import { globAsync, numPadStart } from "./utils";
 import winston from "winston";
 import { dispatchWorks } from "./dispatcher";
+import dayjs from 'dayjs';
 
 async function main() {
     let logger = winston.createLogger({
@@ -39,7 +40,9 @@ async function main() {
         });
         logger.info(`[${numPadStart(++fileIndex, numDispIdent)} / ${fileCount}] processed file ${item}`);
     }));*/
-    dispatchWorks(
+    let startTime = dayjs();
+    const unix0 = dayjs(0);
+    await dispatchWorks(
         join(__dirname, "processFileWorker.js"),
         fileList.map(item => ({
             path: join(config.srcDir, item),
@@ -50,12 +53,13 @@ async function main() {
             drop: false,
         })),
         (m) => {
-            logger.info(`[${numPadStart(++fileIndex, numDispIdent)} / ${fileCount}] Thread[${numPadStart(m.extInfo.tid, 2)}] processed file ${m.extInfo.item}`);
+            logger.info(`[${numPadStart(++fileIndex, numDispIdent)} / ${fileCount}] Thread[${numPadStart(m.extInfo.tid, 2)}] processed file ${m.extInfo.item} (${dayjs().diff(unix0, "ms") - m.extInfo.time}ms)`);
         },
         (e) => {
             logger.error(`[${numPadStart(++fileIndex, numDispIdent)} / ${fileCount}] throws:\n${e}`);
         }
     );
+    logger.info(`Build finished. Used ${dayjs().diff(startTime, "ms") / 1000}s`);
 }
 
 main();

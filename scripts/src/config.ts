@@ -1,4 +1,6 @@
+import dayjs from "dayjs";
 import { extname, join, relative, sep } from "path";
+import { ExtInfoProcessor } from "./processors/ExtInfoProcessor";
 import { CopyFileProcessor, HTMLProcessor, MarkdownProcessor, MinifyCSSProcessor, MinifyJSProcessor, ReadFileProcessor, TemplateProcessor, WriteFileProcessor } from "./processors/index";
 
 import { AsyncIdentityFunc } from "./utils";
@@ -16,7 +18,7 @@ let htmlWithTmplList = [
     "index.html",
     "index/index.html",
 ];
-
+const unix0 = dayjs(0);
 let procs = {
     HTML: HTMLProcessor({
         minify: true,
@@ -34,12 +36,14 @@ let procs = {
     WriteFile: WriteFileProcessor(),
     MinifyJS: MinifyJSProcessor(),
     MinifyCSS: MinifyCSSProcessor(),
+    BeginTime: ExtInfoProcessor(e => ({ ...e, time: dayjs().diff(unix0, "ms") }))
 };
 
 let rules: ProcessRules = [
     {
         test: path => extname(path) === ".md",
         use: [
+            procs.BeginTime,
             config.preserveMarkdown ? procs.CopyFile : AsyncIdentityFunc,
             procs.ReadFile,
             procs.Markdown,
@@ -51,6 +55,7 @@ let rules: ProcessRules = [
     {
         test: path => htmlWithTmplList.includes(relative(config.srcDir, path).replace(sep, "/")),
         use: [
+            procs.BeginTime,
             procs.ReadFile,
             procs.Template,
             procs.HTML,
@@ -60,6 +65,7 @@ let rules: ProcessRules = [
     {
         test: path => [".htm", ".html"].includes(extname(path)),
         use: [
+            procs.BeginTime,
             procs.ReadFile,
             procs.HTML,
             procs.WriteFile,
@@ -68,6 +74,7 @@ let rules: ProcessRules = [
     {
         test: path => extname(path) === ".js",
         use: [
+            procs.BeginTime,
             procs.ReadFile,
             procs.MinifyJS,
             procs.WriteFile,
@@ -76,6 +83,7 @@ let rules: ProcessRules = [
     {
         test: path => extname(path) === ".css",
         use: [
+            procs.BeginTime,
             procs.ReadFile,
             procs.MinifyCSS,
             procs.WriteFile,
@@ -84,6 +92,7 @@ let rules: ProcessRules = [
     {
         test: _path => true,
         use: [
+            procs.BeginTime,
             procs.CopyFile,
         ],
     },
