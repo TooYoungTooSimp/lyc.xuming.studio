@@ -18,7 +18,7 @@ async function splitMarkdown(content: string) {
     let result = yaml_block_matcher.exec(content);
     return result
         ? {
-            meta: yaml.safeLoad(result[1]) as any,
+            meta: yaml.load(result[1]) as any,
             content: content.slice(result.index + result[0].length)
         }
         : {
