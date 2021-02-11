@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 import { extname, join, relative, sep } from "path";
 import { ExtInfoProcessor } from "./processors/ExtInfoProcessor";
-import { CopyFileProcessor, HTMLProcessor, MarkdownProcessor, MinifyCSSProcessor, MinifyJSProcessor, ReadFileProcessor, TemplateProcessor, WriteFileProcessor } from "./processors/index";
+import { CopyFileProcessor, HTMLProcessor, MarkdownProcessor, MinifyCSSProcessor, MinifyJSProcessor, ReadFileProcessor, TemplateProcessor, WriteFileProcessor } from "./processors/_index";
 
 import { AsyncIdentityFunc } from "./utils";
 
