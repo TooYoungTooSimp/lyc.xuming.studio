@@ -1,0 +1,44 @@
+\hypertarget{hxds-debug-list}{%
+\section{hxd's debug list}\label{hxds-debug-list}}
+
+\begin{quote}
+ACM本就逆风而行，在去机房的路上被风吹翻很正常。
+\end{quote}
+
+\begin{itemize}
+\tightlist
+\item
+  线段树要开4倍内存
+\item
+  cin跑得超级慢
+\item
+  memset 比 for循环快得多
+
+  \begin{itemize}
+  \tightlist
+  \item
+    memset总是清空整个数组，有时候只清理要用到的部分用for也许更好。
+  \end{itemize}
+\item
+  有多组数据时要清空全局变量（以及各种队列）
+\item
+  \texttt{std::accumulate} 的返回类型由第三个参数（初始值）决定。
+\item
+  进bfs的时候要记得push初始状态。 / front后记得pop。
+\item
+  检查输出编号是否在范围内(0)。
+\item
+  检查不存在可行解时的输出(-1)。
+\item
+  cin不仅跑得慢，而且跑得超级无敌螺旋飞天香蕉船慢。
+\item
+  当你怎么样都过不了的时候（显然不会TLE的东西TLE了或者RE），试试把数组开大十倍，有可能是题面打错了。
+\item
+  \texttt{explicit\ specialization\ of\ \textquotesingle{}template\textless{}class\ \_Tp\textgreater{}\ struct\ std::hash\textquotesingle{}\ outside\ its\ namespace\ must\ use\ a\ nested-name-specifier\ {[}-fpermissive{]}}for
+  example:
+  \texttt{struct\ std::hash\textless{}pair\textless{}int,\ int\textgreater{}\textgreater{}}
+  but not
+  \texttt{struct\ hash\textless{}pair\textless{}int,\ int\textgreater{}\textgreater{}}
+\end{itemize}
+
+\hypertarget{__comment}{}

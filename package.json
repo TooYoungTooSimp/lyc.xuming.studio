@@ -4,12 +4,12 @@
   "description": "",
   "private": true,
   "scripts": {
-    "prebuild": "tsc -p scripts/src --outDir scripts/dist --pretty",
-    "watch": "tsc -p scripts/src --outDir scripts/dist --watch --pretty",
-    "build": "node scripts/dist/build.js",
+    "prebuild": "tsc -p buildscripts/src --outDir buildscripts/dist --pretty",
+    "watch": "tsc -p buildscripts/src --outDir buildscripts/dist --watch --pretty",
+    "build": "node buildscripts/dist/build_all.js",
     "clean": "rimraf dist",
-    "clean-tools": "rimraf scripts/dist",
-    "distclean": "rimraf dist scripts/dist"
+    "clean-tools": "rimraf buildscripts/dist",
+    "distclean": "rimraf dist buildscripts/dist"
   },
   "repository": {
     "type": "git",
