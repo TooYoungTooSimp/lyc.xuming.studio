@@ -37,3 +37,9 @@ body {
     color: white;
     text-decoration: none;
 }
+
+#_163player {
+    position: fixed;
+    bottom: 0.1rem;
+    left: 0.1rem;
+}
