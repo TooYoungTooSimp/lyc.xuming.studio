@@ -21,6 +21,10 @@ body {
     transition: background 2s;
 }
 
+.flex-space {
+    flex: auto;
+}
+
 #pixiv_id_wrapper {
     position: fixed;
     z-index: -1;
