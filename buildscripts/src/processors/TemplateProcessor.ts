@@ -31,6 +31,9 @@ export function TemplateProcessor(config: any = {}) {
                     helpers: handlebars_helpers
                 }));
             },
+            timestamp() {
+                return Date.now();
+            }
         };
         let tmpl = handlebars.compile(state.content)
         state.content = tmpl(state.extInfo.viewData, {
