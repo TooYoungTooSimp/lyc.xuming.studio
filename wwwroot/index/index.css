@@ -10,7 +10,7 @@
 }
 
 #content > p > img {
-    margin-left: -2em;
+    max-width: calc(100% - 4em);
 }
 
 body {
