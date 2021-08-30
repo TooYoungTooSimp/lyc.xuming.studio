@@ -1,8 +1,9 @@
-const sleep = async (duration) => new Promise(resolve => setTimeout(resolve, duration));
+// @entrypoint
+const sleep = async (duration: number) => new Promise(resolve => setTimeout(resolve, duration));
 
 document.addEventListener("DOMContentLoaded", async () => {
     const body = document.querySelector("body");
-    const pixiv_id = document.querySelector("#pixiv_id");
+    const pixiv_id = document.querySelector<HTMLAnchorElement>("#pixiv_id");
     let metadata = await fetch("https://pixiv.ccf.workers.dev/").then(x => x.json());
     metadata = metadata["pixivBackgroundSlideshow.illusts"]["landscape"];
     let cur_objurl = null;

@@ -1,7 +1,17 @@
 import dayjs from "dayjs";
 import { extname, join, relative, sep } from "path";
-import { ExtInfoProcessor } from "./processors/ExtInfoProcessor";
-import { CopyFileProcessor, HTMLProcessor, MarkdownProcessor, MinifyCSSProcessor, MinifyJSProcessor, ReadFileProcessor, TemplateProcessor, WriteFileProcessor } from "./processors/_index";
+import {
+    ExtInfoProcessor,
+    CopyFileProcessor,
+    HTMLProcessor,
+    MarkdownProcessor,
+    MinifyCSSProcessor,
+    MinifyJSProcessor,
+    ReadFileProcessor,
+    TemplateProcessor,
+    WriteFileProcessor,
+    BuildTypeScript
+} from "./processors/_index";
 
 import { AsyncIdentityFunc } from "./utils";
 
@@ -36,6 +46,7 @@ let procs = {
     WriteFile: WriteFileProcessor(),
     MinifyJS: MinifyJSProcessor(),
     MinifyCSS: MinifyCSSProcessor(),
+    BuildTypeScript: BuildTypeScript(),
     BeginTime: ExtInfoProcessor(e => ({ ...e, time: dayjs().diff(unix0, "ms") }))
 };
 
@@ -78,6 +89,14 @@ let rules: ProcessRules = [
             procs.ReadFile,
             procs.MinifyJS,
             procs.WriteFile,
+        ],
+    },
+    {
+        test: path => extname(path) === ".ts",
+        use: [
+            procs.BeginTime,
+            procs.ReadFile,
+            procs.BuildTypeScript,
         ],
     },
     {
