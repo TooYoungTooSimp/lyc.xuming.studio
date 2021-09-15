@@ -33,7 +33,7 @@
     "dayjs": "^1.10.7",
     "glob": "^7.1.7",
     "handlebars": "^4.7.7",
-    "html-minifier-terser": "^6.0.0",
+    "html-minifier-terser": "^6.0.2",
     "js-yaml": "^4.1.0",
     "marked": "^3.0.4",
     "rimraf": "^3.0.2",
