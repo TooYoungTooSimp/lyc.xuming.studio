@@ -27,7 +27,7 @@
     "@types/glob": "^7.1.4",
     "@types/html-minifier-terser": "^6.0.0",
     "@types/js-yaml": "^4.0.3",
-    "@types/marked": "^3.0.0",
+    "@types/marked": "^3.0.1",
     "@types/node": "^16.9.1",
     "clean-css": "^5.1.5",
     "dayjs": "^1.10.7",
