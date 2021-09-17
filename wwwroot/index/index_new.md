@@ -1,5 +1,9 @@
 # devblog
 
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 style="margin-left:2em" src="//music.163.com/outchain/player?type=2&id=840305&auto=1&height=32"></iframe>
+
+---------------------------------
+
 无论怎么样，该开学还是会开学的。
 
 不知道是两天前还是三天前，社团的评测机掉线了。今天找人一边视频一边查，他接显示器线的时候要开闪光灯，一开闪光灯视频就停了，我就没有看到接线的情况。最后恰恰却是网线掉了。这理由简直跟笑话一样。
@@ -22,7 +26,7 @@
 
 ---------------------------------
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 style="margin-left:2em" src="//music.163.com/outchain/player?type=2&id=1483490495&auto=1&height=32"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 style="margin-left:2em" src="//music.163.com/outchain/player?type=2&id=1483490495&auto=0&height=32"></iframe>
 
 “拥有绝妙的猜测能力是怎样一种体验？” 知乎上有这样的问题吗？
 
