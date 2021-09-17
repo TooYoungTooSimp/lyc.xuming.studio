@@ -25,7 +25,7 @@ const minifyHTML = (content: string) =>
 export function HTMLProcessor(config: any = {}) {
     return async function (state: FileState) {
         if (config.minify)
-            state.content = minifyHTML(state.content!);
+            state.content = await minifyHTML(state.content!);
         return state;
     };
 }
