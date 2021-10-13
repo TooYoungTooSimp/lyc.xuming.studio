@@ -9,6 +9,10 @@
     text-indent: 2em;
 }
 
+#content > blockquote {
+    margin-left: 2em;
+}
+
 #content > p > img {
     max-width: calc(100% - 4em);
 }
