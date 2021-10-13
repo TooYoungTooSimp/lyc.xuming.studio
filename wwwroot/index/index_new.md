@@ -2,6 +2,14 @@
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 style="margin-left:2em" src="//music.163.com/outchain/player?type=2&id=22805698&auto=1&height=32"></iframe>
 
+论与狗打架：
+
+若是打赢了狗，也不值得骄傲。但若是被狗打败，定会成为众人的笑柄。
+
+我打算用高中信息学教练喜欢的一句话作为寄语：
+
+> 要做有意义的事
+
 ---------------------------------
 
 无论怎么样，该开学还是会开学的。
