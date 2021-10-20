@@ -24,7 +24,7 @@
   "homepage": "https://github.com/TooYoungTooSimp/lyc.xuming.studio#readme",
   "devDependencies": {
     "@types/clean-css": "^4.2.5",
-    "@types/glob": "^7.1.4",
+    "@types/glob": "^7.2.0",
     "@types/html-minifier-terser": "^6.0.0",
     "@types/js-yaml": "^4.0.3",
     "@types/marked": "^3.0.1",
