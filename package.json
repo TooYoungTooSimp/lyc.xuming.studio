@@ -35,13 +35,13 @@
     "handlebars": "^4.7.7",
     "html-minifier-terser": "^6.0.2",
     "js-yaml": "^4.1.0",
-    "marked": "^4.0.0",
+    "marked": "^4.0.3",
     "rimraf": "^3.0.2",
     "terser": "^5.9.0",
-    "typescript": "^4.4.4",
+    "typescript": "^4.5.2",
     "winston": "^3.3.3"
   },
   "dependencies": {
-    "esbuild": "^0.13.8"
+    "esbuild": "^0.13.14"
   }
 }
