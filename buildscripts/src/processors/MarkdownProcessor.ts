@@ -2,7 +2,7 @@ import config from "../config";
 import { changeExt, getCachedReaderAsync, getCachedReaderSync, readFileText, readFileTextSync } from "../utils";
 import yaml from "js-yaml";
 import path from "path";
-import marked from "marked";
+import { marked } from "marked";
 
 function readTmplConfig(config: any) {
     let cfg = JSON.parse(readFileTextSync(config.path()));

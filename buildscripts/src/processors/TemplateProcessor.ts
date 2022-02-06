@@ -1,6 +1,6 @@
 import path from "path";
 import { getCachedReaderSync, readFileTextSync } from "../utils";
-import marked from "marked";
+import { marked } from "marked";
 import handlebars, { SafeString } from "handlebars";
 
 const compile_template = (path: string, cache: { [key: string]: any }) =>
