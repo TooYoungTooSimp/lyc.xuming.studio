@@ -38,7 +38,7 @@
     "marked": "^4.0.12",
     "rimraf": "^5.0.0",
     "terser": "^5.16.9",
-    "typescript": "^5.0.2",
+    "typescript": "^5.0.4",
     "winston": "^3.8.2"
   },
   "dependencies": {
