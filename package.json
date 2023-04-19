@@ -37,7 +37,7 @@
     "js-yaml": "^4.1.0",
     "marked": "^4.0.12",
     "rimraf": "^5.0.0",
-    "terser": "^5.16.9",
+    "terser": "^5.17.1",
     "typescript": "^5.0.2",
     "winston": "^3.8.2"
   },
