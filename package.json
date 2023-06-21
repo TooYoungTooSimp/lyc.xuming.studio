@@ -42,6 +42,6 @@
     "winston": "^3.8.2"
   },
   "dependencies": {
-    "esbuild": "^0.18.1"
+    "esbuild": "^0.18.6"
   }
 }
