@@ -1,13 +1,14 @@
 import config from "./config";
 import { join } from "path";
-import { globAsync, numPadStart } from "./utils";
+import { numPadStart } from "./utils";
+import { glob } from "glob";
 import { dispatchWorks } from "./dispatcher";
 import dayjs from 'dayjs';
 import { getLogger } from "./logger";
 
 async function main() {
     let logger = getLogger();
-    let fileList = await globAsync("**/*", {
+    let fileList = await glob("**/*", {
         cwd: config.srcDir,
         nodir: true,
         ignore: config.internalPaths,

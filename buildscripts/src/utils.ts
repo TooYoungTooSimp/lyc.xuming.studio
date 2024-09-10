@@ -1,7 +1,5 @@
 import { promises as fs, constants as fs_constants, readFileSync } from "fs";
 import path from "path";
-import { glob } from "glob";
-import { promisify } from "util";
 
 export const readFileText = async (file: string) => fs.readFile(file, { encoding: "utf-8" });
 export const readFileTextSync = (file: string) => readFileSync(file, { encoding: "utf-8" });
@@ -35,7 +33,5 @@ export async function ensureFileWrite(pth: string) {
 export const AsyncIdentityFunc = async <T>(arg: T) => arg;
 
 export const IdentityFunc = <T>(arg: T) => arg;
-
-export const globAsync = promisify(glob);
 
 export const numPadStart = (x: number, padding: number) => x.toString().padStart(padding);

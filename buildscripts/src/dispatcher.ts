@@ -15,7 +15,6 @@ export function dispatchWorks<TTask>(
     succ_callback: (msg: any) => void,
     fail_callback: (err: any) => void,
     parallel_degrees: number = Math.min(task_list.length, Math.max(1, cpus().length - 1)),
-    default_capacity: number = task_list.length,
 ) {
     return new Promise<void>((resolve, reject) => {
         try {
@@ -57,14 +56,8 @@ export function dispatchWorks<TTask>(
                 worker.on("error", fail_callback);
                 return worker_info;
             };
-            // TODO: add task self-adaptive load dispatch
-            let workers: WorkerInfo[] = [...Array(parallel_degrees)].map(_ => createWorkerInfo());
-            // stage1: dispatch tasks to workers' capacity.
-            let stage1_limit = Math.min(parallel_degrees * default_capacity, task_list.length);
-            for (; curTaskIdx < stage1_limit; curTaskIdx++) {
-                let current_worker = workers[curTaskIdx % workers.length];
-                addTask(current_worker, task_list[curTaskIdx]);
-            }
+            for (; curTaskIdx < parallel_degrees; curTaskIdx++)
+                addTask(createWorkerInfo(), task_list[curTaskIdx]);
         } catch (error) {
             reject(error);
         }

@@ -23,7 +23,7 @@ export function TemplateProcessor(config: any = {}) {
     return async function (state: FileState) {
         const handlebars_helpers = {
             md(path: string) {
-                return safe_str(marked(reader[__resolv(path)]));
+                return safe_str(marked(reader[__resolv(path)], { async: false }));
             },
             inc(path: string) {
                 let tmpl = compile_template(__resolv(path), templateCache);
