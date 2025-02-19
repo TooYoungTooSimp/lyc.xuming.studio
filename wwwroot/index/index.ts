@@ -2,16 +2,16 @@
 const sleep = async (duration: number) => new Promise(resolve => setTimeout(resolve, duration));
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const body = document.querySelector("body");
-    const pixiv_id = document.querySelector<HTMLAnchorElement>("#pixiv_id");
+    const body = document.querySelector("body")!;
+    const pixiv_id = document.querySelector<HTMLAnchorElement>("#pixiv_id")!;
     let metadata = await fetch("https://pixiv.ccf.workers.dev/").then(x => x.json());
     metadata = metadata["pixivBackgroundSlideshow.illusts"]["landscape"];
-    let cur_objurl = null;
+    let cur_objurl: string | null = null;
     (async function changeBackground() {
         let cur_image = metadata[Math.floor(Math.random() * metadata.length)];
         let url = "https://pixiv.ccf.workers.dev/" + cur_image["url"]["1200x1200"];
         let img_req = await fetch(url);
-        let img = new Blob([await img_req.arrayBuffer()], { type: img_req.headers.get('content-type') });
+        let img = new Blob([await img_req.arrayBuffer()], { type: img_req.headers.get('content-type')! });
         let objurl = URL.createObjectURL(img);
         body.style.backgroundImage = `url(${objurl})`;
         pixiv_id.innerHTML = `PixivID: ${cur_image["illust_id"]}`;
