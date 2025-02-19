@@ -1,5 +1,5 @@
 ---
-title: 个人的奋斗与历史的行程
+title: 暂时没必要看到的内容
 template: basic
 ---
 
