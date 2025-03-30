@@ -8,7 +8,7 @@
 
 写真作品集：[photography.xuming.studio](//photography.xuming.studio)
 
-# 非直接的政治性抑郁
+# 非直接的政治性抑郁 (25/03/30)
 
 > 为什么不写直接的？晶格求你摇了我把
 
