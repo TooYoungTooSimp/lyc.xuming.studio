@@ -1,3 +1,9 @@
+# 宝探し (25/06/30)
+
+找到了应该是本科期间收到的唯一一份礼物
+
+![](post/20250630_assets/OPA211K.jpg)
+
 # The Replay (25/06/18)
 
 When I was a first-year undergraduate student. I always attend the codeforces contests, with one of my teammates. She always takes a bottle of coffee to feed me (after 3 years I started home-making espresso and drip coffee, I can't admit there's nothing to do with this hobby). After finishing a contest (often the 00:30 next day), we lay on chairs made "beds" parallelly, and chatted a lot till fell asleep. We go to the next day's class together. But one day something was different, one professor seems working late in the lab where we spent time together in each contest. And he insists we go back to the dorm to sleep (of course separately). We didn't follow his instructions but found a bench at the stadium and then finished the contest with a much worse result. At that time, I really didn't care about the contest (it is held weekly and no coach will inspect this) at all but enjoyed the company and atmosphere we spent together. We sit aside and chat about random and meaningless things. I made a joke that "there must be something wrong (in seishun lovecome)" I thought we had a relationship tightening each other at that time. 
