@@ -29,7 +29,7 @@
     "@types/marked": "^6.0.0",
     "@types/node": "^24.3.0",
     "clean-css": "^5.3.3",
-    "dayjs": "^1.11.14",
+    "dayjs": "^1.11.15",
     "glob": "^11.0.3",
     "handlebars": "^4.7.8",
     "html-minifier-terser": "^7.2.0",
