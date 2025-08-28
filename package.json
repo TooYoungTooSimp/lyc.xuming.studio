@@ -24,24 +24,23 @@
   "homepage": "https://github.com/TooYoungTooSimp/lyc.xuming.studio#readme",
   "devDependencies": {
     "@types/clean-css": "^4.2.11",
-    "@types/glob": "^8.1.0",
     "@types/html-minifier-terser": "^7.0.2",
     "@types/js-yaml": "^4.0.9",
     "@types/marked": "^6.0.0",
-    "@types/node": "^24.0.7",
+    "@types/node": "^24.3.0",
     "clean-css": "^5.3.3",
-    "dayjs": "^1.11.13",
+    "dayjs": "^1.11.14",
     "glob": "^11.0.3",
     "handlebars": "^4.7.8",
     "html-minifier-terser": "^7.2.0",
     "js-yaml": "^4.1.0",
-    "marked": "^16.0.0",
+    "marked": "^16.2.1",
     "rimraf": "^6.0.1",
     "terser": "^5.43.1",
-    "typescript": "^5.8.3",
+    "typescript": "^5.9.2",
     "winston": "^3.17.0"
   },
   "dependencies": {
-    "esbuild": "^0.25.5"
+    "esbuild": "^0.25.9"
   }
 }

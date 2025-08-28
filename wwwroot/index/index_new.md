@@ -1,3 +1,13 @@
+# Yesterday Once More (25/08/28)
+
+I felt like I fell into the same trap I had failed to escape before, as I mentioned in a past post. Exactly the same.
+
+Around me, people are working with 8x H100 compute platforms, doing cutting-edge research on agents, MCP, and whatever else. Meanwhile, I’m just digging for oil in the mountains—fixing printers and configuring SMB sharing. Once again, I felt left behind. Defeated. Frustrated.
+
+I tried to figure out what exactly causes this disappointment. Is it the gap between my current situation and the groundbreaking work happening around me? I imagine reversing roles: me at the forefront of technology, and others handling more traditional tasks. Would that make me feel better? I doubt it. The answer is simply, no.
+
+Reflecting on this, I realize the core issue isn’t just the work itself, but the separation and divergence of our paths. Our lives have split in different directions. I have no idea what she’s doing, and she doesn’t care about what I’m doing. That indifference—that distance—is the root cause of my frustration.
+
 # 宝探し (25/06/30)
 
 找到了应该是本科期间收到的唯一一份礼物

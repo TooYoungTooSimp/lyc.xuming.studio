@@ -1,4 +1,5 @@
 // @entrypoint
+
 const sleep = async (duration: number) => new Promise(resolve => setTimeout(resolve, duration));
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -21,4 +22,19 @@ document.addEventListener("DOMContentLoaded", async () => {
         cur_objurl = objurl;
         setTimeout(changeBackground, 60 * 1000);
     })();
+    const titles = document.querySelectorAll("article h1");
+    titles.forEach(title => {
+        // let date=/\((\d{2})\/(\d{2})\/(\d{2})\)/.exec(title.innerHTML);
+        // The Replay (25/06/18)
+        let title_parts = /^(.*)\((\d{2})\/(\d{2})\/(\d{2})\)$/.exec(title.innerHTML);
+        if (title_parts) {
+            let [_, title_txt, year, month, day] = title_parts;
+            title.innerHTML = title_txt.trim();
+            console.log(`Title: ${title_txt}, Date: ${year}-${month}-${day}`);
+            let pDate = document.createElement("p");
+            pDate.innerText = `20${year}/${month}/${day}`;
+            pDate.style.textAlign = "right";
+            title.after(pDate);
+        }
+    });
 });
