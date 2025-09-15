@@ -34,7 +34,7 @@
     "handlebars": "^4.7.8",
     "html-minifier-terser": "^7.2.0",
     "js-yaml": "^4.1.0",
-    "marked": "^16.2.1",
+    "marked": "^16.3.0",
     "rimraf": "^6.0.1",
     "terser": "^5.43.1",
     "typescript": "^5.9.2",
