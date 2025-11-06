@@ -1,8 +1,14 @@
+# 年度讲话 (25/11/06)
+
+搞不懂的东西太多了，以前搞不懂的东西现在照样搞不懂，不仅如此，还发现了更多搞不懂的东西。我看还是别去试图搞懂了，暂且睡大觉罢。
+
+抽象也许可以解释为一种荒诞，因为面对这两者的时候都会自然发笑
+
 # Yesterday Once More (25/08/28)
 
 I felt like I fell into the same trap I had failed to escape before, as I mentioned in a past post. Exactly the same.
 
-Around me, people are working with 8x H100 compute platforms, doing cutting-edge research on agents, MCP, and whatever else. Meanwhile, I’m just digging for oil in the mountains—fixing printers and configuring SMB sharing. Once again, I felt left behind. Defeated. Frustrated.
+Around me, people are working with 8x H100 compute platforms, doing cutting-edge research on multimodals, agents, MCP, and whatever else. Meanwhile, I’m just digging for oil in the mountains—fixing printers and configuring SMB sharing. Once again, I felt left behind. Defeated. Frustrated.
 
 I tried to figure out what exactly causes this disappointment. Is it the gap between my current situation and the groundbreaking work happening around me? I imagine reversing roles: me at the forefront of technology, and others handling more traditional tasks. Would that make me feel better? I doubt it. The answer is simply, no.
 
