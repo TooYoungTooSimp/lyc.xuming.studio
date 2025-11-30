@@ -24,7 +24,7 @@ unconditional acknowledgement
 
 I felt like I fell into the same trap I had failed to escape before, as I mentioned in a past post. Exactly the same.
 
-Around me, people are working with 8x H100 compute platforms, doing cutting-edge research on multimodals, agents, MCP, and whatever else. Meanwhile, I’m just digging for oil in the mountains—fixing printers and configuring SMB sharing. Once again, I felt left behind. Defeated. Frustrated.
+Around me, people are working with 8x H100 compute platforms, doing cutting-edge research on multimodals, agents, MCP, and whatever else. Meanwhile, I’m just digging oil, extracting gas in the mountains literally—fixing printers and configuring SMB sharing. Once again, I felt left behind. Defeated. Frustrated.
 
 I tried to figure out what exactly causes this disappointment. Is it the gap between my current situation and the groundbreaking work happening around me? I imagine reversing roles: me at the forefront of technology, and others handling more traditional tasks. Would that make me feel better? I doubt it. The answer is simply, no.
 
