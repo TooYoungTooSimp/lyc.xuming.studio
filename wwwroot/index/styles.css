@@ -6,6 +6,10 @@
     margin: 1em 1em 3em;
 }
 
+.markdown-body {
+    background: transparent;
+}
+
 .markdown-body h3 {
     margin-top: 8px;
 }
