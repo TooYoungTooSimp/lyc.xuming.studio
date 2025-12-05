@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         if (title_parts) {
             let [_, title_txt, year, month, day] = title_parts;
             title.innerHTML = title_txt.trim();
-            console.log(`Title: ${title_txt}, Date: ${year}-${month}-${day}`);
+            // console.log(`Title: ${title_txt}, Date: ${year}-${month}-${day}`);
             let pDate = document.createElement("p");
             pDate.innerText = `20${year}/${month}/${day}`;
             pDate.style.textAlign = "right";
