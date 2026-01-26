@@ -2,6 +2,15 @@
 
 过去的故事集
 
+# 杂谈 (26/01/26)
+
+我只觉得扯淡，在这年头能找到不用弄得一身油污卖力气的工作纯纯是命好。
+我每天都得爬二层平台抄表，转阀门调整产量，搬运安装安全阀，弄得身上跟在泥巴里面爬过一样。
+就差让我蹲在池子里面拿个棍子点个火了。
+今天上午还他妈下雨，那个逼外输流量计还有延迟，跟浴室花洒调水温一个德行，一转就转多了，往回转又转少了。
+
+我必须重申命好和确定性路径完全是两个不同的东西，任何尝试将前者包装成后者的行为都是对在泥巴里爬的人的不公平。
+
 # 冒名顶替综合征 (25/12/06)
 
 > 可是我的自卑勝過了一切愛我的，於是我把自己殺死了
@@ -50,7 +59,7 @@ Reflecting on this, I realize the core issue isn’t just the work itself, but t
 
 # The Replay (25/06/18)
 
-When I was a first-year undergraduate student. I always attend the codeforces contests, with one of my teammates. She always takes a bottle of coffee to feed me (after 3 years I started home-making espresso and drip coffee, I can't admit there's nothing to do with this hobby). After finishing a contest (often the 00:30 next day), we lay on chairs made "beds" parallelly, and chatted a lot till fell asleep. We go to the next day's class together. But one day something was different, one professor seems working late in the lab where we spent time together in each contest. And he insists we go back to the dorm to sleep (of course separately). We didn't follow his instructions but found a bench at the stadium and then finished the contest with a much worse result. At that time, I really didn't care about the contest (it is held weekly and no coach will inspect this) at all but enjoyed the company and atmosphere we spent together. We sit aside and chat about random and meaningless things. I made a joke that "there must be something wrong (in seishun lovecome)" I thought we had a relationship tightening each other at that time. 
+When I was a first-year undergraduate student. I always attend the codeforces contests, with one of my teammates. She always takes a bottle of coffee to feed me (after 3 years I started home-making espresso and drip coffee, I can't admit there's nothing to do with this hobby). After finishing a contest (often the 00:30 next day), we lay on chairs made "beds" parallelly, and chatted a lot till fell asleep. We go to the next day's class together. But one day something was different, one professor seems working late in the lab where we spent time together in each contest. And he insists we go back to the dorm to sleep (of course separately). We didn't follow his instructions but found a bench at the stadium and then finished the contest with a much worse result. At that time, I really didn't care about the contest (it is held weekly and no coach will inspect this) at all but enjoyed the company and atmosphere we spent together. We sit aside and chat about random and meaningless things. I made a joke that "there must be something wrong (in seishun lovecome)" I thought we had a relationship tightening each other at that time.
 
 That was the time when the campus had no guards. We sneak out for some BBQ, then share a bag of pocky (eating from her hand instead of mine). We stayed at a kfc which was still open late, I taught her some algorithms about 2d and 3d geometry from a book written by me in high school. I enjoyed sharing my knowledge at that time.
 
@@ -75,7 +84,6 @@ From another aspect, even if the solution is deployed, the uncontrollable public
 I can only trust language models run on deterministic algorithms but not humans existing in reality. I'm now fear of others.
 
 After all, the story was finished and I felt a little relief.
-
 
 # 寻找遗失的记忆的胶片之旅 (25/06/14)
 
